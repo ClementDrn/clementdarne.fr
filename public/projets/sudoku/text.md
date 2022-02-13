@@ -1,0 +1,1 @@
+L'application graphique créée grâce à la librairie SFML en C++, permet de créer une feuille de sudoku et d'y laisser uniquement quelques numéros pour ensuite essayer de la remplir soit même. Mais bien sûr, elle peut également résoudre une feuille non remplie.
