@@ -5,3 +5,4 @@
 
 # Third parties
 /vendor/
+/node_modules/

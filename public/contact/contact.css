@@ -1,0 +1,29 @@
+.contact-list {
+  flex-direction: row;
+  width: 90%;
+  max-width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact {
+  width: auto;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+.contact > p {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: var(--muted);
+}
+
+.contact > img {
+  width: 6rem;
+  height: 6rem;
+  filter: invert(100%) sepia(1%) saturate(1414%) hue-rotate(171deg) brightness(114%) contrast(87%);
+}

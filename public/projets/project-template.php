@@ -61,6 +61,7 @@ function projectPage($projectID) {
             <a class='nav-link' aria-current='page' href='../../'>Accueil</a>
             <a class='nav-link active' href='../'>Projets</a>
             <a class='nav-link' href='../../a-propos-de-moi/'>À propos de moi</a>
+            <a class='nav-link' href='../contact/'>Contact</a>
           </nav>
         </div>
       </header>
