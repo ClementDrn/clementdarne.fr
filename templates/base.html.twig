@@ -2,7 +2,14 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Salut, moi c'est Clément Darne, je suis étudiant en informatique et voici mon site Web personnel.">
+        <meta name="author" content="Clément Darne">
+        
+        <title>{% block title %}Clément Darne{% endblock %}</title>
+        
+        <link rel="canonical" href="https://dev.clementdarne.fr">
+
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
@@ -14,6 +21,24 @@
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <header>
+            <div class="navigation-bar">
+                <a href="./" title="Accueil">
+                    <h3 class="title">Clément Darne</h3>
+                </a>
+                <nav class="nav nav-masthead justify-content-center float-md-end">
+                    <a class="nav-link active" aria-current="page" href="./">Accueil</a>
+                    <a class="nav-link" href="./projets/">Projets</a>
+                    <a class="nav-link" href="./a-propos-de-moi/">À propos de moi</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            {% block body %}{% endblock %}
+        </main>
+
+        <footer>
+        </footer>
     </body>
 </html>
