@@ -56,6 +56,11 @@ footer {
   left: 10rem;
 }
 
+#campfire {
+  height: 2rem;
+  margin: 0 auto;
+}
+
 @media (max-width: 290px) {
   #tree3 {
     display: none

@@ -61,7 +61,7 @@ function projectPage($projectID) {
             <a class='nav-link' aria-current='page' href='../../'>Accueil</a>
             <a class='nav-link active' href='../'>Projets</a>
             <a class='nav-link' href='../../a-propos-de-moi/'>À propos de moi</a>
-            <a class='nav-link' href='../contact/'>Contact</a>
+            <a class='nav-link' href='../../contact/'>Contact</a>
           </nav>
         </div>
       </header>
@@ -119,16 +119,27 @@ function projectPage($projectID) {
     if (isset($project['links']['download'])) {
       echo ("
           <a href='".$project['links']['download']."' title='Télécharger le projet'>
-            <img src='../../assets/icons/ic-download-light.svg' width='80' height='80' alt='Téléchargement'>
+            <img src='../../assets/icons/ic-download.svg' width='80' height='80' alt='Téléchargement'>
           </a>
       ");
     }
 
-    // TODO: Github, Gitlab, other
+    if (isset($project['links']['github'])) {
+      echo ("
+          <a href='".$project['links']['github']."' title='GitHub' target='_blank'>
+            <img src='../../assets/icons/bootstrap-icons/github.svg' width='80' height='80' alt='GitHub'>
+          </a>
+      ");
+    }
+
+    // TODO: Gitlab, other
     
     echo ("
         </section>
-    
+    ");
+  }
+
+  echo ("
       </main>
     
     
@@ -142,6 +153,5 @@ function projectPage($projectID) {
       </body>
     
     </html>
-    ");
-  }
+  ");
 }

@@ -162,7 +162,8 @@ a.project-link {
 
 #links img {
   padding: .5rem;
-  border: 2px solid var(--light);
-  color: var(--light);
-  border-radius: .5rem;
+  color: black;
+  /* border-radius: .5rem; */
+  filter: invert(100%) sepia(2%) saturate(643%) hue-rotate(228deg) brightness(114%) contrast(87%);
+  /* border: 2px solid black; */
 } 
