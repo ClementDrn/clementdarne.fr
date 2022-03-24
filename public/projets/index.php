@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" class="h-100">
+<html lang="fr">
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,23 +16,23 @@
 
   <body>
     
+    <!-- Navigation bar -->
+    <header>
+      <div class="navigation-bar">
+        <h3 class="nav-title">
+          <a href="/" title="Accueil">Clément Darne</a>
+        </h3>
+        <nav>
+          <a class="nav-link" href="/">Accueil</a>
+          <a class="nav-link active" aria-current="page" href="/projets/">Projets</a>
+          <a class="nav-link" href="/a-propos-de-moi/">À propos de moi</a>
+          <a class="nav-link" href="/contact/">Contact</a>
+        </nav>
+      </div>
+    </header>
 
     <div class="container">
 
-      <!-- Navigation bar -->
-      <header>
-        <div class="navigation-bar">
-          <h3 class="nav-title">
-            <a href="/" title="Accueil">Clément Darne</a>
-          </h3>
-          <nav>
-            <a class="nav-link" href="/">Accueil</a>
-            <a class="nav-link active" aria-current="page" href="/projets/">Projets</a>
-            <a class="nav-link" href="/a-propos-de-moi/">À propos de moi</a>
-            <a class="nav-link" href="/contact/">Contact</a>
-          </nav>
-        </div>
-      </header>
 
       <main>
 
@@ -79,21 +79,22 @@ if ($statement->execute()) {
 
       // Prints the project card
       echo ("
-        <a id='$directory' class='card ".(($released) ? "released" : "unreleased")."' href='./$directory/' title='$name'>
-          <img class='rounded-top thumbnail' src='./$directory/thumbnail.jpg' height='450' width='600' alt='Thumbnail'/>
+          <div class='card-container'>
+            <a id='$directory' class='card ".(($released) ? "released" : "unreleased")."' href='./$directory/' title='$name'>
+              <img class='rounded-top thumbnail' src='./$directory/thumbnail.jpg' height='450' width='600' alt='Thumbnail'/>
 
-          <div class='card-body'>
-            <h2>$name</h2>
-            <p class='card-text'>
-              $presentation
-            </p>
-            <div class='card-footer'>
-              <small class='version'>$version</small>
-              <small class='date'>$date</small>
-            </div>
+              <div class='card-body'>
+                <h2>$name</h2>
+                <p class='card-text'>
+                  $presentation
+                </p>
+                <div class='card-footer'>
+                  <small class='version'>$version</small>
+                  <small class='date'>$date</small>
+                </div>
+              </div>
+            </a>
           </div>
-        </a>
-
       ");
     }
   }
@@ -105,7 +106,7 @@ if ($statement->execute()) {
         </div> <!-- album -->
       </main>
 
-      <footer class="">
+      <footer>
       </footer>
     </div>
 

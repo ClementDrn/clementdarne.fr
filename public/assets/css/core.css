@@ -35,6 +35,8 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   height: 100%;
   width: 100%;
@@ -51,29 +53,67 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 .5rem;
 }
 
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
+  padding-top: .5rem;
+}
+
+p + h1, p + h2, p + h3, p + h4, p + h5, p + h6 {
+  padding-top: 1rem;
+}
+
 h1 {
   font-size: calc(1.4rem + 1.5vw);
+}
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 2.5rem;
+  }
 }
 
 h2 {
   font-size: calc(1.32rem + 1vw);
   margin-bottom: 1rem;
 }
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
 
 h3 {
   font-size: calc(1.3rem + .6vw);
+}
+@media (min-width: 1200px) {
+  h3 {
+    font-size: 1.8rem;
+  }
 }
 
 h4 {
   font-size: calc(1.28rem + .4vw);
 }
+@media (min-width: 1200px) {
+  h4 {
+    font-size: 1.7rem;
+  }
+}
 
 h5 {
   font-size: calc(1.26rem + .2vw);
 }
+@media (min-width: 1200px) {
+  h5 {
+    font-size: 1.6rem;
+  }
+}
 
 h6 {
   font-size: calc(1.24rem + .1vw);
+}
+@media (min-width: 1200px) {
+  h6 {
+    font-size: 1.5rem;
+  }
 }
 
 p {
@@ -99,6 +139,10 @@ img, svg {
 
 .text-right {
   text-align: right;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .lead {
@@ -135,26 +179,63 @@ strong {
 .container {
   display: flex;
   flex-direction: column;
-  padding: 1rem 0 0 0;
-  height: 100%;
+  padding: 0 1rem;
   width: 100%;
-}
-
-.introduction {
-  padding: 5.5rem 1rem;
-  text-align: center;
   margin: 0 auto;
 }
-
+@media (min-width: 600px) {
+  .container {
+    max-width: 580px;
+  }
+}
 @media (min-width: 800px) {
-  .introduction {
+  .container {
     max-width: 770px;
   }
 }
 @media (min-width: 1000px) {
-  .introduction {
+  .container {
     max-width: 960px;
   }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+
+.introduction {
+  padding: 5.5rem 1rem 5rem;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+@media (min-width: 800px) {
+  .introduction {
+    max-width: 80%;
+  }
+}
+@media (min-width: 1000px) {
+  .introduction {
+    max-width: 60%;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -173,8 +254,7 @@ nav {
   display: flex;
   max-width: 50em;
   padding: 0 1rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 1rem auto 0;
   justify-content: center;
 }
 

@@ -16,7 +16,9 @@ function projectPage($projectID) {
     exit();
   }
 
-  if (!$project = parse_ini_file(__DIR__.'/'.$row['directory'].'/project.ini', TRUE)) {
+  $directory = $row['directory'];
+
+  if (!$project = parse_ini_file(__DIR__.'/'.$directory.'/project.ini', TRUE)) {
     throw new exception("Unable to open 'project.ini'");
   }
 
@@ -24,13 +26,13 @@ function projectPage($projectID) {
   $presentation = $row['presentation'];
 
   $parsedown = new Parsedown();
-  $text = $parsedown->text(file_get_contents(__DIR__.'/'.$row['directory'].'/text.md'));
+  $text = $parsedown->text(file_get_contents(__DIR__.'/'.$directory.'/text.md'));
 
   $skills = explode(',', $project['skills']['list']);
 
   echo ("
     <!doctype html>
-    <html lang='fr' class='h-100'>
+    <html lang='fr'>
       <head>
         <meta charset='utf-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -38,115 +40,104 @@ function projectPage($projectID) {
         <meta name='author' content='Clément Darne'>
         <title>$name · Clément Darne</title>
     
-        <link rel='canonical' href=''>
+        <link rel='canonical' href='https://clementdarne.fr/projets/$directory'>
     
         <link href='/assets/css/core.css' rel='stylesheet'>
         <link href='/assets/css/projects.css' rel='stylesheet'>
       </head>
     
     
-      <body class='d-flex h-100'>
+      <body>
         
     
-    <div class='container d-flex w-100 h-100 p-3 mx-auto flex-column'>
-    
-      <!-- Navigation bar -->
-      <header class='mb-auto text-center'>
-        <div class='navigation-bar'>
-          <a href='../../' title='Accueil'>
-            <h3 class='float-md-start mb-0'>Clément Darne</h3>
-          </a>
-          <nav class='nav nav-masthead justify-content-center float-md-end'>
-            <a class='nav-link' aria-current='page' href='../../'>Accueil</a>
-            <a class='nav-link active' href='../'>Projets</a>
-            <a class='nav-link' href='../../a-propos-de-moi/'>À propos de moi</a>
-            <a class='nav-link' href='../../contact/'>Contact</a>
-          </nav>
-        </div>
-      </header>
-    
-    
-      <main class='text-center'>
-    
-        <!-- Introduction -->
-        <section class='py-5 text-center container'>
-          <div class='row pt-lg-5'>
-            <div class='col-lg-6 col-md-8 mx-auto'>
-              <h1 class='fw-light mb-3'>$name</h1>
+        <!-- Navigation bar -->
+        <header>
+          <div class='navigation-bar'>
+            <h3 class='nav-title'>
+              <a href='/' title='Accueil'>Clément Darne</a>
+            </h3>
+            <nav>
+              <a class='nav-link' href='/'>Accueil</a>
+              <a class='nav-link active' aria-current='page' href='/projets/'>Projets</a>
+              <a class='nav-link' href='/a-propos-de-moi/'>À propos de moi</a>
+              <a class='nav-link' href='/contact/'>Contact</a>
+            </nav>
+          </div>
+        </header>
+        
+        <div class='container'>
+        
+          <main class='text-center'>
+        
+            <!-- Introduction -->
+            <section class='introduction'>
+              <h1>$name</h1>
               <p class='lead'>
                 $presentation
               </p>
-            </div>
-          </div>
-        </section>
-    
-        <!-- Cover -->
-        <div class='d-flex justify-content-center mb-5'>
-          <img class='cover mb-3' src='".$project['cover']['src']."' 
-            width='".$project['cover']['width']."' height='".$project['cover']['height']."' 
-            alt='".$project['cover']['alt']."'/>
-        </div>
-    
-        <!-- Presentation -->
-        <section id='presentation' class='pt-3 mb-5'>
-          <h2 class='fw-light mb-3'>Présentation</h2>
-          $text
-        </section>
-    
-        <!-- Skills -->
-        <section id='skills' class='pt-3 mb-5'>
-          <h2 class='fw-light mb-3'>Compétences travaillées</h2>
-          <ul>"
+            </section>
+        
+            <!-- Description -->
+            <section id='description'>
+              $text
+            </section>
+        
+            <!-- Skills -->
+            <section id='skills'>
+              <h2>Compétences travaillées</h2>
+              <ul>"
   );
 
   foreach ($skills as $skill) {
-    echo "<li>$skill</li>";
+    echo ("
+                <li>$skill</li>
+    ");
   }
   
   echo ("
-          </ul>
-        </section>
+              </ul>
+            </section>
   ");
     
   if (count($project['links']) !== 0) {
     echo ("
-        <!-- Links -->
-        <section id='links' class='mb-5 pt-3'>
-          <h2 class='fw-light mb-4'>Liens du projet</h2>
+            <!-- Links -->
+            <section id='links'>
+              <h2>Liens du projet</h2>
     ");
 
     if (isset($project['links']['download'])) {
       echo ("
-          <a href='".$project['links']['download']."' title='Télécharger le projet'>
-            <img src='../../assets/icons/ic-download.svg' width='80' height='80' alt='Téléchargement'>
-          </a>
+              <a href='".$project['links']['download']."' title='Télécharger le projet'>
+                <img src='../../assets/icons/ic-download.svg' width='80' height='80' alt='Téléchargement'>
+              </a>
       ");
     }
 
     if (isset($project['links']['github'])) {
       echo ("
-          <a href='".$project['links']['github']."' title='GitHub' target='_blank'>
-            <img src='../../assets/icons/bootstrap-icons/github.svg' width='80' height='80' alt='GitHub'>
-          </a>
+              <a href='".$project['links']['github']."' title='GitHub' target='_blank'>
+                <img src='../../assets/icons/bootstrap-icons/github.svg' width='80' height='80' alt='GitHub'>
+              </a>
       ");
     }
 
     // TODO: Gitlab, other
     
     echo ("
-        </section>
+            </section>
     ");
   }
 
   echo ("
-      </main>
-    
-    
-      <footer>
-      </footer>
-    
-    
-    </div> 
+          </main>
+        
+        
+          <footer>
+          </footer>
+        
+        
+        </div> 
         
     
       </body>

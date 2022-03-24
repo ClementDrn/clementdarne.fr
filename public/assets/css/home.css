@@ -1,8 +1,18 @@
 /* Main page stylesheet */
 
+h1 {
+  font-weight: 500;
+}
+
+p {
+  padding-top: 0!important;
+}
+
 .home-container {
+  flex: 1;
   max-width: 50em;
   margin: 0 auto;
+  padding: 0;
 }
 
 main {

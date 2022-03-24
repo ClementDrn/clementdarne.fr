@@ -38,11 +38,26 @@
   justify-content: center;
 }
 
+.card-container {
+  display: flex;
+  padding: .5rem;
+  max-width: 410px;
+}
+@media (min-width: 600px) {
+  .card-container {
+    width: 50%;
+  }
+}
+@media (min-width: 1000px) {
+  .card-container {
+    width: 33.3333333%;
+  }
+}
+
 .card {
   display: flex;
+  flex: 1;
   flex-direction: column;
-  margin: 1rem;
-  max-width: 410px;
 
   background-color: var(--gray);
   word-wrap: break-word;
@@ -117,22 +132,34 @@
 
 
 /*
- * Cover image
+ * Description
  */
 
-.cover {
+#description {
+  max-width: 50rem;
+  margin: 0 auto 3rem;
+}
+
+#description p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--muted-gray)
+}
+
+#description img {
   max-width: 100%;
   height: auto;
   box-shadow: 0 0 .25rem rgba(0,0,0,.075);
   border: 0;
   border-radius: .25rem;
+  margin: 0 0 4rem;
 }
-
 @media (min-width: 768px) { 
-  .cover {
+  #description img {
     border-radius: .5rem;
   }
- }
+}
+
 
 /*
  * Skills
@@ -140,6 +167,8 @@
 
 #skills {
   text-align: center;
+  margin-bottom: 3rem;
+  padding-top: 1rem;
 }
 
 #skills ul {
@@ -157,27 +186,14 @@
   color: var(--blue);
 }
 
-
-/*
- * Presentation
- */
-
-#presentation {
-  max-width: 50rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#presentation p {
-  font-size: 1.1rem;
-  font-weight: 300;
-  color: var(--muted-gray)
-}
-
-
 /*
  * Links
  */
+
+#links {
+  margin-bottom: 3rem;
+  padding-top: 1rem;
+}
 
 #links img {
   padding: .5rem;

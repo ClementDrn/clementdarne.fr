@@ -1,3 +1,7 @@
+![Sudoku résolu](./screenshot2.png)
+
+## Présentation
+
 Cette application permet de générer des sudokus vierges. Une utilisation typique est d'en générer un, le recopier sur feuille et essayer de le compléter, puis une fois fini l'application peut le résoudre pour montrer la solution.
 
 L'application en est actuellement à sa deuxième version majeure dans laquelle toute l'architecture a été repensée et le code optimisé. De plus, cerise sur le gâteau, alors qu'avant l'utilisateur devait appuyer sur certaines touches du clavier pour générer un sudoku, ce processus est maintenant facilité grâce à une interface graphique.
