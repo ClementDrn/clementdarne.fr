@@ -40,9 +40,8 @@ function projectPage($projectID) {
     
         <link rel='canonical' href=''>
     
-        <link href='../../assets/css/bootstrap.min.css' rel='stylesheet'>
-        <link href='../../assets/css/main-styles.css' rel='stylesheet'>
-        <link href='../projects.css' rel='stylesheet'>
+        <link href='/assets/css/core.css' rel='stylesheet'>
+        <link href='/assets/css/projects.css' rel='stylesheet'>
       </head>
     
     

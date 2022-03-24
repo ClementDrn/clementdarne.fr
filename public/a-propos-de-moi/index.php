@@ -9,9 +9,8 @@
 
     <link rel="canonical" href="">
 
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../assets/css/main-styles.css" rel="stylesheet">
-    <link href="./about.css" rel="stylesheet">
+    <link href="/assets/css/core.css" rel="stylesheet">
+    <link href="/assets/css/about.css" rel="stylesheet">
   </head>
 
 
@@ -27,10 +26,10 @@
         <h3 class="float-md-start mb-0">Clément Darne</h3>
       </a>
       <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link" aria-current="page" href="../">Accueil</a>
-        <a class="nav-link" href="../projets/">Projets</a>
-        <a class="nav-link active" href="./">À propos de moi</a>
-        <a class="nav-link" href="../contact/">Contact</a>
+        <a class="nav-link" href="/">Accueil</a>
+        <a class="nav-link" href="/projets/">Projets</a>
+        <a class="nav-link active" aria-current="page" href="/about/">À propos de moi</a>
+        <a class="nav-link" href="/contact/">Contact</a>
       </nav>
     </div>
   </header>
