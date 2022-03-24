@@ -134,6 +134,12 @@ function projectPage($projectID) {
         
         
           <footer>
+            <p class='license'>
+              Ce site web est mis à disposition selon les termes de la&nbsp;
+              <a rel='license' href='http://creativecommons.org/licenses/by/4.0/'>
+                Licence Creative Commons Attribution 4.0 International
+              </a>. 
+            </p>
           </footer>
         
         
