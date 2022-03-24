@@ -10,10 +10,6 @@
   border-radius: 0;
 }
 
-a.project-link {
-  text-decoration: none;
-  color: inherit;
-}
 
 /*
  * Containers
@@ -34,30 +30,68 @@ a.project-link {
  * Album
  */
 
+.album {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1rem auto 3rem;
+  justify-content: center;
+}
+
+.card-container {
+  display: flex;
+  padding: .5rem;
+  max-width: 410px;
+}
+@media (min-width: 600px) {
+  .card-container {
+    width: 50%;
+  }
+}
+@media (min-width: 1000px) {
+  .card-container {
+    width: 33.3333333%;
+  }
+}
+
 .card {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
   background-color: var(--gray);
-  height: 100%;
+  word-wrap: break-word;
+
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+}
+
+.card > img.thumbnail {
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
 }
 
 .card-body {
   display: flex;
   flex-direction: column;
   position: relative;
+  margin: 1rem;
+  flex: 1;
 }
 
-.carte-footer {
+.card-footer {
   flex: 1;
   position: relative;
   min-height: 1.2rem;
-  height: auto;
 }
 
-.carte-footer > small {
+.card-footer > small {
   position: absolute;
   bottom: 0;
 }
 
-.carte-footer .date {
+.card-footer .date {
   right: 0;
   color: var(--muted);
 }
@@ -98,22 +132,34 @@ a.project-link {
 
 
 /*
- * Cover image
+ * Description
  */
 
-.cover {
+#description {
+  max-width: 50rem;
+  margin: 0 auto 3rem;
+}
+
+#description p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--muted-gray)
+}
+
+#description img {
   max-width: 100%;
   height: auto;
   box-shadow: 0 0 .25rem rgba(0,0,0,.075);
   border: 0;
   border-radius: .25rem;
+  margin: 0 0 4rem;
 }
-
 @media (min-width: 768px) { 
-  .cover {
+  #description img {
     border-radius: .5rem;
   }
- }
+}
+
 
 /*
  * Skills
@@ -121,6 +167,8 @@ a.project-link {
 
 #skills {
   text-align: center;
+  margin-bottom: 3rem;
+  padding-top: 1rem;
 }
 
 #skills ul {
@@ -138,27 +186,14 @@ a.project-link {
   color: var(--blue);
 }
 
-
-/*
- * Presentation
- */
-
-#presentation {
-  max-width: 50rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#presentation p {
-  font-size: 1.1rem;
-  font-weight: 300;
-  color: var(--muted-gray)
-}
-
-
 /*
  * Links
  */
+
+#links {
+  margin-bottom: 3rem;
+  padding-top: 1rem;
+}
 
 #links img {
   padding: .5rem;
