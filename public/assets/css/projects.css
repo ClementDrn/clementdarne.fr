@@ -160,6 +160,11 @@
   }
 }
 
+#description a {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
 
 /*
  * Skills
