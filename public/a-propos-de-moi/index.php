@@ -43,7 +43,7 @@
 
           <?php
             $age = date_diff(new DateTime(date('d-m-Y')), new DateTime('24-03-2002'));
-            echo $age->y.' ans, '.$age->m.' mois et '.$age->d.' jours.';
+            echo $age->y.' ans, '.$age->m.' mois et '.$age->d.($age->d > 1 ? ' jours.' : 'jour.');
           ?>
 
           J'ai la chance d'étudier un domaine
