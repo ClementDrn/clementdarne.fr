@@ -1,3 +1,7 @@
+main {
+  justify-content: start;
+}
+
 .contact-list {
   flex-direction: row;
   width: 90%;

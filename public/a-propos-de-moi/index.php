@@ -51,98 +51,154 @@
           </p>
         </section>
 
-        <div id="grid" class="row">
+        <!-- Profile picture  -->
+        <img id="profile-picture" src="/assets/img/me.jpg" height="100" witdth="100" alt="Ma photo"/>
 
-          <div id="col-1" class="column flex-3">
+        <!-- Carrer History -->
+        <section id="history" class="narrow">
+          <h2>Mon parcours</h2>
+          <p>
+            Même si mes études ont principalement eu lieu en <strong>France</strong>, j'ai eu la chance de 
+            passer plus de 5 ans de ma scolarité en <strong>Martinique</strong> pour une partie de la maternelle 
+            et de l'école primaire.<br/>
+            Par la suite j'ai surmonté le <strong>Brevet au collège</strong> pour 
+            ensuite affronter le <strong>lycée Jean-Paul Sartre</strong> à <strong>Bron</strong>.
+            Mais en plein milieu, je suis parti un an avec ma famille en <strong>Irlande</strong> pour mon 
+            année de 1ère dans la <strong>Bishopstown Community School</strong> à <strong>Cork</strong>.<br/>
+            Une fois les épreuves du <strong>BAC</strong> passées (ah non c'est vrai, confinement...), 
+            je me suis attaqué au <strong>DUT d'Informatique</strong> à l'<strong>IUT Lyon 1</strong>. 
+            Mais je n'en suis toujours pas revenu, à suivre...
+          </p>
+        </section>
 
-            <div id="row-1" class="row flex-2">
+        <!-- Skills -->
+        <section id="skills">
 
-              <!-- Hobbies -->
-              <div id="cell-1" class="cell flex-1">
-                <h2>Mes passions</h2>
-                <p>
-                  De manière générale je suis intéressé par presque tout sujet <strong>scientifique</strong>, notamment 
-                  l'<strong>informatique</strong>. C'est pourquoi la majorité de mes projets sont dans ce domaine.<br/>
-                  Aussi j'affectionne les <strong>jeux vidéos</strong> avec une préférence pour les jeux d'aventure 
-                  comme <strong>Zelda</strong>. Mais également d'autres formes d'art comme la musique. 
-                  Car oui, je joue du <strong>violon</strong> depuis un moment maintenant.<br/>
-                  Du côté littérature, en ce moment je prends plaisir à parcourir la <strong>saga du Sorceleur</strong>.<br/>
-                  Finalement, j'apprécie également me dépenser en faisant du <strong>sport</strong>. J'ai pratiqué
-                  pendant plusieurs années du tennis et du basket.
-                </p>
-              </div>
+          <?php
+            function displayBubble($bubbleFile, $id, $bubbleSize, $iconName, $iconFile, $iconWidth, $margin)
+            {
+              echo ("
+          <div id='$id' style='width: $bubbleSize; height: $bubbleSize; margin: $margin;' class='bubbled-img'>
+            <img class='bubble' title='$iconName' src='/assets/img/$bubbleFile'/>
+            <img style='width: $iconWidth;' class='icon' title='$iconName' src='/assets/img/languages/$iconFile'/>
+          </div>
+              ");
+            }
 
-              <!-- Career -->
-              <div id="cell-2" class="cell flex-1">
-                <h2>Mon parcours</h2>
-                <p>
-                  Même si mes études ont principalement eu lieu en <strong>France</strong>, j'ai eu la chance de 
-                  passer plus de 5 ans de ma scolarité en <strong>Martinique</strong> pour une partie de la maternelle 
-                  et de l'école primaire.<br/>
-                  Par la suite j'ai surmonté le <strong>Brevet au collège</strong> pour 
-                  ensuite affronter le <strong>lycée Jean-Paul Sartre</strong> à <strong>Bron</strong>.
-                  Mais en plein milieu, je suis parti un an avec ma famille en <strong>Irlande</strong> pour mon 
-                  année de 1ère dans la <strong>Bishopstown Community School</strong> à <strong>Cork</strong>.<br/>
-                  Une fois les épreuves du <strong>BAC</strong> passées (ah non c'est vrai, confinement...), 
-                  je me suis attaqué au <strong>DUT d'Informatique</strong> à l'<strong>IUT Lyon 1</strong>. 
-                  Mais je n'en suis toujours pas revenu, à suivre...
-                </p>
-              </div>
-            </div>
-            <div id="row-2" class="row flex-1">
+            function displayBlueBubble($id, $bubbleSize, $iconName, $iconFile, $iconWidth, $margin = "0")
+            {
+              displayBubble("bubble 100x100.svg", $id, $bubbleSize, $iconName, $iconFile, $iconWidth, $margin);
+            }
 
-              <!-- Personnality -->
-              <div id="cell-3" class="cell flex-2">
-                <h2>Ma personnalité</h2>
-                <p>
-                  Je suis souvent <strong>honnête</strong>, <strong>à l'écoute</strong> et <strong>bienveillant</strong>. 
+            function displayPurpleBubble($id, $bubbleSize, $iconName, $iconFile, $iconWidth, $margin = "0")
+            {
+              displayBubble("bubble purple 100x100.svg", $id, $bubbleSize, $iconName, $iconFile, $iconWidth, $margin);
+            }
 
-                  Je suis réputé comme étant <strong>créatif</strong>, avec une bonne <strong>mémoire</strong> 
-                  et un esprit <strong>logique</strong>.<br/>
-                  
-                  Néanmoins, étant <strong>minutieux</strong>, j'aime aussi faire attention aux détails 
-                  lorsque je réalise une tâche, ce qui a tendance à me donner une certaine 
-                  <strong>lenteur</strong> et à rendre ma <strong>prise de décision</strong> plus difficile.<br/>
+            function displayTurquoiseBubble($id, $bubbleSize, $iconName, $iconFile, $iconWidth, $margin = "0")
+            {
+              displayBubble("bubble turquoise 100x100.svg", $id, $bubbleSize, $iconName, $iconFile, $iconWidth, $margin);
+            }
+          ?>
 
-                  J'aime <strong>découvrir</strong> et <strong>apprendre</strong> de 
-                  nouvelles choses, ou encore <strong>résoudre</strong> des problèmes complexes.
-                  Mais également <strong>partager</strong> des connaissances et <strong>enseigner</strong> aux autres.<br/>
-                  
-                  Je suis un défenseur de la <strong>nature</strong> et d'ailleurs j'adore 
-                  la montagne.
-                  
-                  <!-- Au fait je dis <span class="underline">la</span> Covid. -->
-                </p>
-              </div>
-            </div>
+          <h2>Mes compétences informatiques</h2>
 
+          <!-- Software -->
+          <div class="bubbles">
+            <?php
+              displayTurquoiseBubble("python", "5rem", "Python", "python 110x110.svg", "55%", "4rem 2rem 0 1rem");
+              displayPurpleBubble("bubble7", "2rem", "Bubble", "../transparent_pixel.png", "0", "8rem 0 0");
+              displayBlueBubble("cpp", "7rem", "C++", "cpp 306x344.svg", "55%", "1rem 1rem 1rem 0");
+              displayBlueBubble("c", "5rem", "C", "c 380x420.svg", "55%", "7rem -1rem 1rem 0");
+              displayTurquoiseBubble("java", "5rem", "Java", "java 234x428.svg", "35%", "1.5rem 2rem 0 .5rem");
+              displayBlueBubble("dotnet", "4.5rem", ".NET", "dotnet 456x456.svg", "45%", "6rem 0 2rem 0");
+              displayPurpleBubble("avalonia", "4.5rem", "Avalonia", "avalonia 700x700.svg", "100%", "0 0 0 -1rem");
+              displayBlueBubble("csharp", "6rem", "C#", "csharp 64x64.svg", "55%", "3rem 0 0 -1rem");
+            ?>
           </div>
 
-          <div id="col-2" class="column flex-1">
 
-            <!-- Profile picture  -->
-            <img id="profile-picture" src="/assets/img/me.jpg" height="100" witdth="100" alt="Ma photo"/>
 
-            <!-- Skills -->
-            <div id="cell-4" class="cell flex-1">
-              <h2>Mes compétences</h2>
-              <ul>
-                <li>C/C++</li>
-                <li>Java</li>
-                <li>Python</li>
-                <li>HTML/CSS</li>
-                <li>Javascript</li>
-                <li>PHP</li>
-                <li>SQL</li>
-                <li>React Native</li>
-                <li>Violon</li>
-              </ul>
-            </div>
-
+          <!-- Video games -->
+          <div class="bubbles">
+            <?php
+              displayBlueBubble("unity", "4.5rem", "Unity", "unity 367x186.svg", "95%", ".5rem 3rem 2rem 1rem");
+              displayBlueBubble("bubble0", "2rem", "Bubble", "../transparent_pixel.png", "0");
+              displayPurpleBubble("unreal-engine", "4rem", "Unreal Engine", "unreal engine 1002x1092.svg", "55%", "3rem 1rem 0");
+              displayTurquoiseBubble("opengl", "4.5rem", "OpenGL", "opengl 1086x450.svg", "80%", "1rem");
+            ?>
+          </div>
+          
+          <!-- Web -->
+          <div class="bubbles">
+            <?php
+              displayTurquoiseBubble("html", "6.2rem", "HTML", "html 512x512.svg", "55%", "1rem 0 0 1rem");
+              displayBlueBubble("css", "6.2rem", "CSS", "css 363x512.svg", "40%", "7rem 3rem 0 -1rem");
+              displayTurquoiseBubble("bubble3", "1.5rem", "Bubble", "../transparent_pixel.png", "0", "1rem 2rem 0 0");
+              displayBlueBubble("javascript", "5rem", "Javascript", "javascript 630x630.svg", "45%", "3rem 1rem");
+              displayTurquoiseBubble("php", "6rem", "PHP", "php 711x384.svg", "65%", "1rem 0 1rem 1rem");
+              displayTurquoiseBubble("symfony", "5.5rem", "Synfony", "symfony 235x66.svg", "80%", "5rem 1rem 1rem 0");
+              displayBlueBubble("bubble1", "3rem", "Bubble", "../transparent_pixel.png", "0");
+              displayBlueBubble("bubble2", "1.5rem", "Bubble", "../transparent_pixel.png", "0", "0 1rem");
+            ?>
+          </div>
+          
+          <!-- Mobile -->
+          <div class="bubbles">
+            <?php
+              displayTurquoiseBubble("bubble4", "2rem", "Bubble", "../transparent_pixel.png", "0", "1rem 1rem 0 3rem");
+              displayPurpleBubble("react-native", "5rem", "React Native", "react native 23x20.svg", "55%", "0 0 0 3rem");
+              displayBlueBubble("bubble5", "3rem", "Bubble", "../transparent_pixel.png", "0", "-1rem 0 0 2rem");
+              displayBlueBubble("bubble6", "2rem", "Bubble", "../transparent_pixel.png", "0", "2rem 0rem 0 .5rem");
+            ?>
+          </div>
+          
+          <!-- Database -->
+          <div class="bubbles">
+            <?php
+              displayPurpleBubble("mysql", "6rem", "MySQL", "mysql 489x253.svg", "70%", "3rem 2rem 0 0");
+              displayBlueBubble("mariadb", "6rem", "MariaDB", "mariadb 416x118.svg", "75%", ".5rem 3rem 0 0");
+              displayTurquoiseBubble("oraclesql", "6.2rem", "Oracle SQL developer", "oracle sql developer 295x335.svg", "45%", "5rem 1rem 0");
+              displayBlueBubble("postgresql", "5.5rem", "PostgreSQL", "postgresql 540x557.svg", "50%", "-1rem 0 0 0");
+            ?>
           </div>
 
-        </div>
+        </section>
 
+        <section id="hobbies" class="narrow">
+          <h2>Mes passions</h2>
+          <p>
+            De manière générale je suis intéressé par presque tout sujet <strong>scientifique</strong>, notamment 
+            l'<strong>informatique</strong>. C'est pourquoi la majorité de mes projets sont dans ce domaine.<br/>
+            Aussi j'affectionne les <strong>jeux vidéos</strong> avec une préférence pour les jeux d'aventure 
+            comme <strong>Zelda</strong>. Mais également d'autres formes d'art comme la musique. 
+            Car oui, je joue du <strong>violon</strong> depuis un moment maintenant.<br/>
+            Du côté littérature, en ce moment je prends plaisir à parcourir la <strong>saga du Sorceleur</strong>.<br/>
+            Finalement, j'apprécie également me dépenser en faisant du <strong>sport</strong>. J'ai pratiqué
+            pendant plusieurs années du tennis et du basket.
+          </p>
+        </section>
+
+        <section id="personnality" class="narrow">
+          <h2>Ma personnalité</h2>
+          <p>
+            Je suis souvent <strong>honnête</strong>, <strong>à l'écoute</strong> et <strong>bienveillant</strong>. 
+
+            Je suis réputé comme étant <strong>créatif</strong>, avec une bonne <strong>mémoire</strong> 
+            et un esprit <strong>logique</strong>.<br/>
+            
+            Néanmoins, étant <strong>minutieux</strong>, j'aime aussi faire attention aux détails 
+            lorsque je réalise une tâche, ce qui a tendance à me donner une certaine 
+            <strong>lenteur</strong> et à rendre ma <strong>prise de décision</strong> plus difficile.<br/>
+
+            J'aime <strong>découvrir</strong> et <strong>apprendre</strong> de 
+            nouvelles choses, ou encore <strong>résoudre</strong> des problèmes complexes.
+            Mais également <strong>partager</strong> des connaissances et <strong>enseigner</strong> aux autres.<br/>
+            
+            Je suis un défenseur de la <strong>nature</strong> et adore 
+            la montagne.
+          </p>
+        </section>
 
       </main>
 

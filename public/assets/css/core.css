@@ -218,21 +218,25 @@ strong {
 }
 
 
-.introduction {
-  padding: 5.5rem 1rem 5rem;
+.narrow, .introduction {
   text-align: center;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
 }
 @media (min-width: 800px) {
-  .introduction {
+  .narrow, .introduction {
     max-width: 80%;
   }
 }
 @media (min-width: 1000px) {
-  .introduction {
+  .narrow, .introduction {
     max-width: 60%;
   }
+}
+
+.introduction {
+  padding: 5.5rem 1rem 5rem;
 }
 
 .row {

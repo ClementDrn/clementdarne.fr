@@ -1,103 +1,59 @@
-#grid {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  height: auto;
-  margin-bottom: 2rem;
-  flex-direction: column;
+h2 {
+  margin-bottom: 2.5rem;
+  padding-top: 1rem;
+} 
+
+section {
+  margin-bottom: 2.5rem;
 }
 
-#row-1 {
-  flex-direction: column;
-}
-
-#col-2 {
-  flex-direction: column;
-}
+/* Profile picture */
 
 #profile-picture {
-  width: calc(65% - 1rem * 2);
-  height: calc(65% - 1rem * 2);
-  margin: 1rem auto;
-}
-
-@media (min-width: 576px) {
-  #profile-picture {
-    width: calc(50% - 1rem * 2);
-    height: calc(50% - 1rem * 2);
-  }
-}
-
-@media (min-width: 768px) {
-  
-  #row-1 {
-    flex-direction: row;
-  }
-
-  #col-2 {
-    flex-direction: row;
-  } 
-  
-  #profile-picture {
-    /* width: calc(50% - 1rem * 2);
-    height: calc(50% - 1rem * 2); */
-    margin: 1rem;
-  }
-
-}
-
-@media (min-width: 992px) {
-
-  #grid {
-    flex-direction: row;
-  }
-
-  #col-2 {
-    flex-direction: column;
-  }
-
-  #profile-picture {
-    height: auto;
-    width: calc(100% - 1rem * 2);
-  }
-
-}
-
-.cell {
-  margin: 1rem;
-}
-
-.cell, #profile-picture {
-  background-color: var(--gray);
-  border: 0;
+  max-width: 17rem;
+  height: auto;
+  margin: 0 auto 3rem;
   border-radius: .25rem;
   box-shadow: 0 .15rem .30rem rgba(0,0,0,.125);
 }
 
-.cell p, .cell ul {
-  margin: 1rem 1.5rem;
-  font-size: 1.1rem;
-  font-weight: 300;
+/* Skills */
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding-top: 2rem;
 }
 
-.cell strong {
-  font-weight: 400;
+.bubbles {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 .5rem .5rem;
 }
 
-.cell p {
-  text-align: justify;
+.bubbled-img {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
 }
 
-.cell ul {
-  text-align: center;
-  padding: 0;
-  list-style-type: none;
+.bubbled-img > img.icon {
+  display: block;
+  position: relative;
 }
 
-.cell h2 {
-  color: var(--blue);
-  font-weight: 300;
-  margin: 1rem 1rem 1.5rem;
+.bubbled-img > img.bubble {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  top: 0;
 }
-
-
