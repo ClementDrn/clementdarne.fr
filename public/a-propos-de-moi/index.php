@@ -70,11 +70,11 @@
             Une fois les épreuves du <strong>BAC</strong> passées (ah non c'est vrai, confinement...), 
             je me suis attaqué à une formation de 2 ans dans l'enceinte de l'<strong>IUT Lyon 1</strong> : le <strong>DUT d'informatique</strong>. 
             Mais, de nouveau, ces 2 courtes années ne se sont pas déroulées dans péripétie. Effectivement, je suis parti au <strong>Québec</strong>. 
-            Ainsi, j'ai passé le 4e semestre du DUT au <strong>Cégep de Matane</strong> et le stage au 
-            <strong><a href="https://cdrin.com">Centre de développement et de recherche en intelligence numérique (CDRIN)</a></strong>.<br/>
+            Ainsi, j'ai passé le 4e semestre du DUT au <strong>Cégep de Matane</strong> et j'ai effectué mone stage au 
+            <strong><a href="https://cdrin.com" class="underline">Centre de développement et de recherche en intelligence numérique (CDRIN)</a></strong>.<br/>
 
-            N'étant toujours pas épuisé d'apprendre, je vais maintenant aller en école d'ingénieur. Pour être plus précis, j'entamme ma 1re année 
-            dans le cursus ingénieur de l'<strong><a href="https://ensimag.grenoble-inp.fr/">École nationale supérieure d'informatique et de mathématiques appliquées (Ensimag)</a></strong>
+            N'étant toujours pas épuisé d'apprendre, je vais maintenant aller en école d'ingénieur. Pour être plus précis, j'entame ma 1re année 
+            dans le cursus ingénieur de l'<strong><a href="https://ensimag.grenoble-inp.fr/" class="underline">École nationale supérieure d'informatique et de mathématiques appliquées (Ensimag)</a></strong>
           </p>
         </section>
 
