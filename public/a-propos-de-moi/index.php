@@ -61,13 +61,20 @@
             Même si mes études ont principalement eu lieu en <strong>France</strong>, j'ai eu la chance de 
             passer plus de 5 ans de ma scolarité en <strong>Martinique</strong> pour une partie de la maternelle 
             et de l'école primaire.<br/>
+
             Par la suite j'ai surmonté le <strong>Brevet au collège</strong> pour 
             ensuite affronter le <strong>lycée Jean-Paul Sartre</strong> à <strong>Bron</strong>.
-            Mais en plein milieu, je suis parti un an avec ma famille en <strong>Irlande</strong> pour mon 
+            Cependant, un événement inattendu a chamboulé ma vie : je suis parti un an avec ma famille en <strong>Irlande</strong> pour mon 
             année de 1ère dans la <strong>Bishopstown Community School</strong> à <strong>Cork</strong>.<br/>
+
             Une fois les épreuves du <strong>BAC</strong> passées (ah non c'est vrai, confinement...), 
-            je me suis attaqué au <strong>DUT d'Informatique</strong> à l'<strong>IUT Lyon 1</strong>. 
-            Mais je n'en suis toujours pas revenu, à suivre...
+            je me suis attaqué à une formation de 2 ans dans l'enceinte de l'<strong>IUT Lyon 1</strong> : le <strong>DUT d'informatique</strong>. 
+            Mais, de nouveau, ces 2 courtes années ne se sont pas déroulées dans péripétie. Effectivement, je suis parti au <strong>Québec</strong>. 
+            Ainsi, j'ai passé le 4e semestre du DUT au <strong>Cégep de Matane</strong> et le stage au 
+            <strong><a href="https://cdrin.com">Centre de développement et de recherche en intelligence numérique (CDRIN)</a></strong>.<br/>
+
+            N'étant toujours pas épuisé d'apprendre, je vais maintenant aller en école d'ingénieur. Pour être plus précis, j'entamme ma 1re année 
+            dans le cursus ingénieur de l'<strong><a href="https://ensimag.grenoble-inp.fr/">École nationale supérieure d'informatique et de mathématiques appliquées (Ensimag)</a></strong>
           </p>
         </section>
 
@@ -182,11 +189,12 @@
         <section id="personnality" class="narrow">
           <h2>Ma personnalité</h2>
           <p>
-            Je suis souvent <strong>honnête</strong>, <strong>à l'écoute</strong> et <strong>bienveillant</strong>. 
+            J'estime être <strong>honnête</strong> et <strong>bienveillant</strong> envers autrui. 
 
-            Je suis réputé comme étant <strong>créatif</strong>, avec une bonne <strong>mémoire</strong> 
+            Aussi, je suis réputé comme étant <strong>créatif</strong>, avec une bonne <strong>mémoire</strong> 
             et un esprit <strong>logique</strong>.<br/>
-            
+
+            Je considère être facilement <strong>passioné</strong> dans les projets que j'entreprends.
             Néanmoins, étant <strong>minutieux</strong>, j'aime aussi faire attention aux détails 
             lorsque je réalise une tâche, ce qui a tendance à me donner une certaine 
             <strong>lenteur</strong> et à rendre ma <strong>prise de décision</strong> plus difficile.<br/>
@@ -194,9 +202,8 @@
             J'aime <strong>découvrir</strong> et <strong>apprendre</strong> de 
             nouvelles choses, ou encore <strong>résoudre</strong> des problèmes complexes.
             Mais également <strong>partager</strong> des connaissances et <strong>enseigner</strong> aux autres.<br/>
-            
-            Je suis un défenseur de la <strong>nature</strong> et adore 
-            la montagne.
+
+            Finalement, <strong>protéger la planète</strong> pour un avenir durable est à mes yeux une valeur inestimable.
           </p>
         </section>
 
