@@ -255,6 +255,12 @@ strong {
  * Header
  */
 
+.header-sticky {
+  position: sticky;
+  top: 0;
+  height: 0;
+}
+
 nav {
   display: flex;
   margin: 0 auto;

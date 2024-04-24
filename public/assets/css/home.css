@@ -20,6 +20,12 @@ main {
   margin: auto;
 }
 
+#start-page {
+  display: flex;
+  border: 1px solid red;
+  height: 100vh;
+}
+
 /*
  * Footer
  */
@@ -33,69 +39,4 @@ footer {
   position: absolute;
   bottom: 0;
   width: auto;
-}
-
-#mountain {
-  height: 10rem;
-  right: 0;
-}
-
-#tree1 {
-  height: 6rem;
-  right: 9rem;
-}
-
-#tree2 {
-  height: 5rem;
-  right: 11rem;
-
-}
-
-#tree3 {
-  height: 5.5rem;
-  left: 0;
-}
-
-#tree4 {
-  height: 5.5rem;
-  left: 5rem;
-}
-
-#tree5 {
-  height: 6.5rem;
-  left: 2.2rem;
-}
-
-#tree6 {
-  height: 4.5rem;
-  left: 10rem;
-}
-
-#campfire {
-  height: 2rem;
-  margin: 0 auto;
-}
-
-@media (max-width: 290px) {
-  #tree3 {
-    display: none
-  }
-}
-
-@media (max-width: 340px) {
-  #tree5 {
-    display: none
-  }
-}
-
-@media (max-width: 380px) {
-  #tree4 {
-    display: none
-  }
-}
-
-@media (max-width: 435px) {
-  #tree6 {
-    display: none
-  }
 }
