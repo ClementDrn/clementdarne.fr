@@ -20,15 +20,35 @@ main {
   margin: auto;
 }
 
+/**
+ * Start Page
+ */
+
 #start-page {
   display: flex;
   border: 1px solid red;
   height: 100vh;
 }
 
-/*
- * Footer
+/**
+ * Projects
  */
+
+#projects {
+  
+}
+
+/**
+ * About section
+ */
+
+#about {
+
+}
+
+/*
+* Footer
+*/
 
 footer {
   height: 3rem;
