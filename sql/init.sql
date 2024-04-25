@@ -1,4 +1,5 @@
 -- Scripts that generate database for clementdarne.fr
+-- Compatible with MariaDB
 
 -- Create database
 DROP DATABASE IF EXISTS clementdarne_fr;
@@ -15,7 +16,7 @@ CREATE TABLE IF NOT EXISTS Projects (
     visible BOOLEAN DEFAULT TRUE,
     released BOOLEAN DEFAULT TRUE,
     github_path VARCHAR(255) NOT NULL,
-    description TEXT NOT NULL,
+    summary TEXT NOT NULL,
     start_year INT NOT NULL,
-    end_year INT VARCHAR(255) NOT NULL
+    end_year INT
 );
