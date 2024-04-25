@@ -1,5 +1,14 @@
 {
   "dependencies": {
     "bootstrap-icons": "^1.8.1"
-  }
+  },
+  "name": "clementdarne.fr",
+  "description": "Personal website",
+  "version": "2.0.0",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Clément Darne",
+  "license": "MIT"
 }
