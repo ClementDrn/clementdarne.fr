@@ -32,8 +32,8 @@
       </div>
     </header>
     
-    <main class="container home-container">
-
+    <main>
+      
       <section id="start-page">
 
         <h1 class="text-left">Salut, moi c'est Clément</h1>
@@ -41,35 +41,38 @@
 
       </section>
 
-      <section id="projects">
-        <?php
-          echo "1";
-          require_once __DIR__.'/../src/projects.php';
-          echo "2";
-          displayProjects();
-          echo "3";
-        ?>
-      </section>
+      <div class="container home-container">
 
-      <section id="about">
-        <h2>About me</h2>
-      </section>
+        <section id="projects">
+          <?php
+            echo "1";
+            require_once __DIR__.'/../src/projects.php';
+            echo "2";
+            displayProjects();
+            echo "3";
+          ?>
+        </section>
 
-      <section id="contact" class="row contact-list">
-        <a class="contact" id="email-contact" href="mailto:cledarne@gmail.com" target="_blank">
-          <img src="../assets/icons/bootstrap-icons/envelope.svg" alt="Email" width="32" height="32"></i>
-          <p>cledarne@gmail.com</p>
-        </a>
-        <a class="contact" id="github-contact" href="https://github.com/ClementDrn" target="_blank">
-          <img src="../assets/icons/bootstrap-icons/github.svg" alt="GitHub" width="32" height="32"></i>
-          <p>@ClementDrn</p>
-        </a>
-        <a class="contact" id="linkedin-contact" href="https://www.linkedin.com/in/clement-darne/" target="_blank">
-          <img src="../assets/icons/bootstrap-icons/linkedin.svg" alt="LinkedIn" width="32" height="32"></i>
-          <p>@clement-darne</p>
-        </a>
-      </section>
+        <section id="about">
+          <h2>About me</h2>
+        </section>
 
+        <section id="contact" class="row contact-list">
+          <a class="contact" id="email-contact" href="mailto:cledarne@gmail.com" target="_blank">
+            <img src="../assets/icons/bootstrap-icons/envelope.svg" alt="Email" width="32" height="32"></i>
+            <p>cledarne@gmail.com</p>
+          </a>
+          <a class="contact" id="github-contact" href="https://github.com/ClementDrn" target="_blank">
+            <img src="../assets/icons/bootstrap-icons/github.svg" alt="GitHub" width="32" height="32"></i>
+            <p>@ClementDrn</p>
+          </a>
+          <a class="contact" id="linkedin-contact" href="https://www.linkedin.com/in/clement-darne/" target="_blank">
+            <img src="../assets/icons/bootstrap-icons/linkedin.svg" alt="LinkedIn" width="32" height="32"></i>
+            <p>@clement-darne</p>
+          </a>
+        </section>
+
+      </div>
     </main>
 
     <footer>

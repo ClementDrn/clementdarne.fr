@@ -15,19 +15,17 @@ p {
   padding: 0;
 }
 
-main {
-  padding: 0 1rem;
-  margin: auto;
-}
-
 /**
  * Start Page
  */
 
 #start-page {
   display: flex;
-  border: 1px solid red;
   height: 100vh;
+  width: 100%;
+
+  /* Grading from bg2 to bg1 */
+  background: linear-gradient(var(--theme-bg2), var(--theme-bg1));
 }
 
 /**

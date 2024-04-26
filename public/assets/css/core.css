@@ -3,13 +3,17 @@
  */
  
  :root {
-  --olive-green-color: #3F4122;
-  --olive-color: #536F16;
-  --pewter-color: #D4D6CF;
-  --green-color: #013A20;
-  --gunmetal-grey-color: #4B5A20;
-  --yellow-green-color: #DBA40E;
-  --bamboo-color: #69a625;
+  --eerie-black: #1e2327;
+  --gunmetal: #2b3339;
+  --sea-green: #458e68;
+  --mint-cream: #e2eae6;
+  --tea-rose: #eeb4b3;
+
+  --theme-bg1: var(--eerie-black);
+  --theme-bg2: var(--gunmetal);
+  --theme-color: var(--sea-green);
+  --theme-light: var(--mint-cream);
+  --theme-contrast: var(--tea-rose);
 
   --dark: #222831;
   --gray: #393e46;
@@ -258,6 +262,8 @@ strong {
   position: fixed;
   top: 0;
   width: 100%;
+  transition: box-shadow .2s;
+  background-color: var(--theme-bg2);
 }
 
 nav {
@@ -276,7 +282,7 @@ nav {
 }
 
 .nav-shadow {
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
 }
 
 .nav-title {
