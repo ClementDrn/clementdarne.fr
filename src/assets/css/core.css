@@ -303,7 +303,7 @@ h3.nav-title {
   flex: 1;
   font-weight: 500;
   align-self: center;
-  color: var(--theme-color);
+  color: var(--theme-contrast);
 }
 
 @media (max-width: 600px) {
@@ -326,13 +326,13 @@ h3.nav-title {
 .nav-link:hover,
 .nav-link:focus {
   /* border-bottom-color: rgba(0, 0, 0, .25); */
-  border-bottom-color: var(--theme-muted);
+  border-bottom-color: var(--theme-color-muted);
 }
 
 .active.nav-link:hover,
 .active.nav-link:focus {
   /* border-bottom-color: rgba(0, 0, 0, .25); */
-  border-bottom-color: var(--theme-contrast-muted);
+  border-bottom-color: var(--theme-color-muted);
 }
 
 .nav-link + .nav-link {
@@ -340,8 +340,8 @@ h3.nav-title {
 }
 
 .nav-link.active {
-  color: var(--theme-contrast);
-  border-bottom-color: var(--theme-contrast);
+  color: var(--theme-color);
+  border-bottom-color: var(--theme-color);
 }
 
 

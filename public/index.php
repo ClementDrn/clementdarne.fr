@@ -78,12 +78,12 @@ if ($err == '') {
           <img src="assets/img/clementdarne_2025.jpg" alt="Photo de Clément Darne" width="300" height="450"/>
           <div class="column justify-center">
             <div id="title">
-              <h1 class="text-left">Salut, moi c'est <span>Clément</span></h1>
+              <h1 class="text-left">Salut, moi c'est <strong>Clément</strong></h1>
               <p class="lead text-right">Étudiant ingénieur en informatique</p>
             </div>
             <p class="quote">
-              Je fais partie des <?php echo $population?> êtres humains qui peuplent cette belle planète qu'est la Terre.
-              Actuellement passioné par mes études d'informatique, j'aspire à continuer en recherche.
+              Je fais partie des <?php echo $population?> êtres humains qui peuplent cette belle planète qu'est la <strong>Terre</strong>.
+              Actuellement passioné par mes études d'<strong>informatique</strong>, j'aspire à continuer en <strong>recherche</strong>.
             </p>
           </div>
         </div>
