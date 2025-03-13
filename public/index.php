@@ -45,9 +45,9 @@ if ($err == '') {
     <meta name="author" content="Clément Darne">
     <title>Clément Darne</title>
 
-    
     <link rel="canonical" href="https://clementdarne.dev">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="/assets/css/core.css" rel="stylesheet">
     <link href="/assets/css/home.css" rel="stylesheet">
   </head>
@@ -78,7 +78,7 @@ if ($err == '') {
           <img src="assets/img/clementdarne_2025.jpg" alt="Photo de Clément Darne" width="300" height="450"/>
           <div class="column justify-center">
             <div id="title">
-              <h1 class="text-left">Salut, moi c'est Clément</h1>
+              <h1 class="text-left">Salut, moi c'est <span>Clément</span></h1>
               <p class="lead text-right">Étudiant ingénieur en informatique</p>
             </div>
             <p class="quote">
@@ -113,15 +113,15 @@ if ($err == '') {
 
         <section id="contact" class="row contact-list">
           <a class="contact" id="email-contact" href="mailto:cledarne@gmail.com" target="_blank">
-            <img src="../assets/icons/bootstrap-icons/envelope.svg" alt="Email" width="32" height="32"></i>
+            <i class="bi-envelope"></i>
             <p>cledarne@gmail.com</p>
           </a>
           <a class="contact" id="github-contact" href="https://github.com/ClementDrn" target="_blank">
-            <img src="../assets/icons/bootstrap-icons/github.svg" alt="GitHub" width="32" height="32"></i>
+            <i class="bi-github"></i>
             <p>@ClementDrn</p>
           </a>
           <a class="contact" id="linkedin-contact" href="https://www.linkedin.com/in/clement-darne/" target="_blank">
-            <img src="../assets/icons/bootstrap-icons/linkedin.svg" alt="LinkedIn" width="32" height="32"></i>
+            <i class="bi-linkedin"></i>
             <p>@clement-darne</p>
           </a>
         </section>

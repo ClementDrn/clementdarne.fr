@@ -10,6 +10,7 @@
   --mint-cream: #e2eae6;
   --ash-grey: #acb9b3;
   --tea-rose: #eeb4b3;
+  --rosy-brown: #cb9392;
 
   --theme-bg1: var(--eerie-black);
   --theme-bg2: var(--gunmetal);
@@ -18,6 +19,7 @@
   --theme-light: var(--mint-cream);
   --theme-muted: var(--ash-grey);
   --theme-contrast: var(--tea-rose);
+  --theme-contrast-muted: var(--rosy-brown);
 
   --dark: #222831;
   --gray: #393e46;
@@ -301,6 +303,7 @@ h3.nav-title {
   flex: 1;
   font-weight: 500;
   align-self: center;
+  color: var(--theme-color);
 }
 
 @media (max-width: 600px) {
@@ -329,7 +332,7 @@ h3.nav-title {
 .active.nav-link:hover,
 .active.nav-link:focus {
   /* border-bottom-color: rgba(0, 0, 0, .25); */
-  border-bottom-color: var(--theme-color-muted);
+  border-bottom-color: var(--theme-contrast-muted);
 }
 
 .nav-link + .nav-link {
@@ -337,8 +340,8 @@ h3.nav-title {
 }
 
 .nav-link.active {
-  color: var(--theme-color);
-  border-bottom-color: var(--theme-color);
+  color: var(--theme-contrast);
+  border-bottom-color: var(--theme-contrast);
 }
 
 
