@@ -53,7 +53,7 @@ if ($err == '') {
   </head>
 
   <body>
-    
+
     <!-- Navigation bar -->
     <header class="header-fixed">
       <div class="navigation-bar">
@@ -62,10 +62,10 @@ if ($err == '') {
         </h3>
         <nav>
           <!-- TODO: Change CSS tags with JS when clicking -->
-          <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-          <a class="nav-link" href="#about">À propos de moi</a>
-          <a class="nav-link" href="#projects">Projets</a>
-          <a class="nav-link" href="#contact">Contact</a>
+          <a id="nav-home" class="nav-link active" aria-current="page" href="#start-page">Accueil</a>
+          <a id="nav-projects" class="nav-link" href="#projects">Projets</a>
+          <a id="nav-about" class="nav-link" href="#about">À propos de moi</a>
+          <a id="nav-contact" class="nav-link" href="#contact">Contact</a>
         </nav>
       </div>
     </header>
@@ -91,15 +91,6 @@ if ($err == '') {
       </section>
 
       <div class="container home-container">
-        
-        <section id="about">
-          
-          <h2>About me</h2>
-          <p>
-            Je suis un être humain parmi les <?php echo $population?> qui peuplent cette belle planète qu'est la Terre.
-            Actuellement passioné par mes études d'informatique, j'aspire à continuer en recherche.
-          </p>
-        </section>
 
         <section id="projects">
           <?php
@@ -109,6 +100,15 @@ if ($err == '') {
             displayProjects();
             echo "3";
           ?>
+        </section>
+
+        <section id="about">
+          
+          <h2>About me</h2>
+          <p>
+            Je suis un être humain parmi les <?php echo $population?> qui peuplent cette belle planète qu'est la Terre.
+            Actuellement passioné par mes études d'informatique, j'aspire à continuer en recherche.
+          </p>
         </section>
 
         <section id="contact" class="row contact-list">
@@ -141,4 +141,5 @@ if ($err == '') {
   </body>
 
   <script type="text/javascript" src="/assets/js/core.js"></script>
+  <script type="text/javascript" src="/assets/js/home.js"></script>
 </html>
