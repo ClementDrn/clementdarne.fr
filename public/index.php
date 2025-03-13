@@ -3,38 +3,15 @@ ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
-require_once __DIR__.'/../src/base.php';
-loadEnv();
+require_once __DIR__.'/../src/api.php';
 
-$curl = curl_init();
-
-curl_setopt_array($curl, [
-  CURLOPT_URL => "https://get-population.p.rapidapi.com/population",
-  CURLOPT_RETURNTRANSFER => true,
-  CURLOPT_ENCODING => "",
-  CURLOPT_MAXREDIRS => 10,
-  CURLOPT_TIMEOUT => 5,
-  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST => "GET",
-  CURLOPT_HTTPHEADER => [
-    "x-rapidapi-host: get-population.p.rapidapi.com",
-    "x-rapidapi-key: ".$_ENV['RAPIDAPI_KEY']
-  ],
-]);
-
-$response = curl_exec($curl);
-$err = curl_error($curl);
-
-curl_close($curl);
-
-$population = "8 milliards";
-if ($err == '') {
-  $array = json_decode($response, true);
-  if ($array['readable_format'] != null) {
-    $population = $array['readable_format'];
-  }
+// Get world population value
+$population = getWorldPopulationString();
+if ($population == '') {
+  $population = "8 milliards";  // default value
 }
 ?>
+
 <!doctype html>
 <html lang="fr">
 
@@ -61,7 +38,6 @@ if ($err == '') {
           <a href="/" title="Accueil">Clément Darne</a>
         </h3>
         <nav>
-          <!-- TODO: Change CSS tags with JS when clicking -->
           <a id="nav-home" class="nav-link active" aria-current="page" href="#start-page">Accueil</a>
           <a id="nav-projects" class="nav-link" href="#projects">Projets</a>
           <a id="nav-about" class="nav-link" href="#about">À propos de moi</a>
