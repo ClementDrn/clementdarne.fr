@@ -257,6 +257,13 @@ strong {
   flex-direction: column;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
 
 /*
  * Header
@@ -272,7 +279,7 @@ strong {
 
 nav {
   display: flex;
-  margin: 0 auto;
+  margin: .5rem auto 0;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -281,7 +288,7 @@ nav {
   display: flex;
   max-width: 50em;
   padding: 0 1rem;
-  margin: 1rem auto 0;
+  margin: .5rem auto 0;
   justify-content: center;
 }
 
@@ -289,14 +296,11 @@ nav {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
 }
 
-.nav-title {
+h3.nav-title {
   margin: 0;
   flex: 1;
   font-weight: 500;
-}
-
-.nav-title > h3 {
-  margin-bottom: 0;
+  align-self: center;
 }
 
 @media (max-width: 600px) {

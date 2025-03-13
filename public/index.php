@@ -1,3 +1,40 @@
+<?php
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
+
+require_once __DIR__.'/../src/base.php';
+loadEnv();
+
+$curl = curl_init();
+
+curl_setopt_array($curl, [
+  CURLOPT_URL => "https://get-population.p.rapidapi.com/population",
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => "",
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 5,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => "GET",
+  CURLOPT_HTTPHEADER => [
+    "x-rapidapi-host: get-population.p.rapidapi.com",
+    "x-rapidapi-key: ".$_ENV['RAPIDAPI_KEY']
+  ],
+]);
+
+$response = curl_exec($curl);
+$err = curl_error($curl);
+
+curl_close($curl);
+
+$population = "8 milliards";
+if ($err == '') {
+  $array = json_decode($response, true);
+  if ($array['readable_format'] != null) {
+    $population = $array['readable_format'];
+  }
+}
+?>
 <!doctype html>
 <html lang="fr">
 
@@ -8,12 +45,12 @@
     <meta name="author" content="Clément Darne">
     <title>Clément Darne</title>
 
-    <link rel="canonical" href="https://clementdarne.fr">
+    
+    <link rel="canonical" href="https://clementdarne.dev">
 
     <link href="/assets/css/core.css" rel="stylesheet">
     <link href="/assets/css/home.css" rel="stylesheet">
   </head>
-
 
   <body>
     
@@ -24,24 +61,45 @@
           <a href="/" title="Accueil">Clément Darne</a>
         </h3>
         <nav>
+          <!-- TODO: Change CSS tags with JS when clicking -->
           <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-          <a class="nav-link" href="#projects">Projets</a>
           <a class="nav-link" href="#about">À propos de moi</a>
+          <a class="nav-link" href="#projects">Projets</a>
           <a class="nav-link" href="#contact">Contact</a>
         </nav>
       </div>
     </header>
-    
+      
     <main>
       
       <section id="start-page">
-
-        <h1 class="text-left">Salut, moi c'est Clément</h1>
-        <p class="lead text-right">Étudiant en informatique</p>
-
+  
+        <div class="row">
+          <img src="assets/img/clementdarne_2025.jpg" alt="Photo de Clément Darne" width="300" height="450"/>
+          <div class="column justify-center">
+            <div id="title">
+              <h1 class="text-left">Salut, moi c'est Clément</h1>
+              <p class="lead text-right">Étudiant ingénieur en informatique</p>
+            </div>
+            <p class="quote">
+              Je fais partie des <?php echo $population?> êtres humains qui peuplent cette belle planète qu'est la Terre.
+              Actuellement passioné par mes études d'informatique, j'aspire à continuer en recherche.
+            </p>
+          </div>
+        </div>
+  
       </section>
 
       <div class="container home-container">
+        
+        <section id="about">
+          
+          <h2>About me</h2>
+          <p>
+            Je suis un être humain parmi les <?php echo $population?> qui peuplent cette belle planète qu'est la Terre.
+            Actuellement passioné par mes études d'informatique, j'aspire à continuer en recherche.
+          </p>
+        </section>
 
         <section id="projects">
           <?php
@@ -51,10 +109,6 @@
             displayProjects();
             echo "3";
           ?>
-        </section>
-
-        <section id="about">
-          <h2>About me</h2>
         </section>
 
         <section id="contact" class="row contact-list">
