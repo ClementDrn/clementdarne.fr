@@ -40,7 +40,7 @@ function displayProjects() {
       $endATag = '';
       $linkIconTag = '';
       if ($link != '') {
-        $startATag = "<a href='$link'>";
+        $startATag = "<a href='$link' target='_blank'>";
         $endATag = '</a>';
         $linkIconTag = "<i class='bi bi-box-arrow-up-right'></i>";
       }
