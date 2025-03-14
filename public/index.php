@@ -116,6 +116,5 @@ if ($population == '') {
 
   </body>
 
-  <script type="text/javascript" src="/assets/js/core.js"></script>
   <script type="text/javascript" src="/assets/js/home.js"></script>
 </html>

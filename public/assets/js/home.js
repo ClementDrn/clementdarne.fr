@@ -9,10 +9,21 @@ const sectionProjects = document.querySelector("#projects");
 const sectionAbout = document.querySelector("#about");
 const sectionContact = document.querySelector("#contact");
 
-let wasNavClicked = false;
+const header = document.querySelector('header.header-fixed');
+
+// Add shadow to navbar after scrolling
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 0) {
+    header.classList.add('nav-shadow');
+  } 
+  else {
+    header.classList.remove('nav-shadow');
+  }
+}, false);
 
 // Update active (highlighted) section in navbar when scrolling
-window.onscroll = function () {
+let wasNavClicked = false;
+window.addEventListener('scroll', function() {
   // Skip if the user has clicked on the navbar so we do not update multiple times
   if (wasNavClicked) {
     return;
@@ -46,7 +57,7 @@ window.onscroll = function () {
   else {
     navContact.classList.remove("active");
   }
-};
+}, false);
 
 var timer = null;
 window.addEventListener('scroll', function() {
