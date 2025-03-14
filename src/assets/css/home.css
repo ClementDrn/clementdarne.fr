@@ -124,7 +124,7 @@ strong {
         box-shadow: rgba(17, 17, 17, 0.1) 0px 8px 24px, rgba(17, 17, 17, 0.1) 0px 16px 56px, rgba(17, 17, 17, 0.1) 0px 24px 80px;
       }
 
-      &:hover .card-image {
+      &:hover .card-image, &:active .card-image {
         box-shadow: rgba(17, 17, 17, 0.1) 0 0 0;
       }
 
@@ -142,7 +142,7 @@ strong {
         box-shadow: rgba(50, 50, 50, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
       }
 
-      &:hover .overlay {
+      &:hover .overlay, &:active .overlay {
         opacity: 1;
       }
       
