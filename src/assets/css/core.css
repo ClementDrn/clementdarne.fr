@@ -7,6 +7,7 @@
   --gunmetal: #2b3339;
   --sea-green: #458e68;
   --hookers-green: #3f6e56;
+  --dark-slate-gray: #234a36;
   --mint-cream: #e2eae6;
   --ash-grey: #acb9b3;
   --tea-rose: #eeb4b3;
@@ -16,6 +17,7 @@
   --theme-bg2: var(--gunmetal);
   --theme-color: var(--sea-green);
   --theme-color-muted: var(--hookers-green);
+  --theme-color-dark: var(--dark-slate-gray);
   --theme-light: var(--mint-cream);
   --theme-muted: var(--ash-grey);
   --theme-contrast: var(--tea-rose);
@@ -277,6 +279,7 @@ strong {
   width: 100%;
   transition: box-shadow .2s;
   background-color: var(--theme-bg2);
+  z-index: 1;
 }
 
 nav {

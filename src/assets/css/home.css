@@ -2,6 +2,14 @@
 
 h1 {
   font-weight: 500;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 2.3rem;
+  text-align: center;
+  margin: 0 0 3rem;
 }
 
 p {
@@ -10,9 +18,12 @@ p {
 
 .home-container {
   flex: 1;
-  max-width: 50em;
   margin: 0 auto;
   padding: 0;
+}
+
+strong {
+  color: var(--theme-color);
 }
 
 /**
@@ -50,10 +61,6 @@ p {
         padding: 1rem 2rem 0 0;
         font-size: 2.4rem;
         text-shadow: rgba(0, 0, 0, 0.4) 0 10px 60px;
-
-        strong {
-          color: var(--theme-contrast);
-        }
       }
     }
 
@@ -67,10 +74,6 @@ p {
       text-justify: inter-word;
       max-width: 38rem;
       margin: 1rem 0;
-
-      strong {
-        color: var(--theme-color);
-      }
     }
   }
 }
@@ -81,7 +84,96 @@ p {
  */
 
 #projects {
-  
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+
+    .card, .card-image, .overlay {
+      border-radius: 15px;
+    }
+
+    .card {
+      display: flex;
+      position: relative;
+      width: 20rem;
+      height: 20rem;
+      background-color: var(--theme-bg2);
+
+      .card-image {
+        display: flex;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 3rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        transition: .3s ease;
+        box-shadow: rgba(17, 17, 17, 0.1) 0px 8px 24px, rgba(17, 17, 17, 0.1) 0px 16px 56px, rgba(17, 17, 17, 0.1) 0px 24px 80px;
+      }
+
+      &:hover .card-image {
+        box-shadow: rgba(17, 17, 17, 0.1) 0 0 0;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .3s ease;
+        background-color: var(--theme-bg2);
+        box-shadow: rgba(50, 50, 50, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+      }
+
+      &:hover .overlay {
+        opacity: 1;
+      }
+      
+      .card-body {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        justify-content: center;
+
+        h3 {
+          text-align: center;
+          margin-bottom: 1rem;
+          color: var(--theme-contrast);
+        }
+
+        .card-text {
+          text-justify: inter-word;
+          overflow: scroll;
+        }
+
+        .card-footer {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin: 0 1rem;
+          color: var(--theme-color);
+        }
+
+        .date {
+          color: var(--theme-contrast);
+        }
+      }
+    }
+  }
 }
 
 /**

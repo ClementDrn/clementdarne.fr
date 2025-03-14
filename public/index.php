@@ -1,4 +1,5 @@
 <?php
+// Uncomment for debugging
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
@@ -18,7 +19,7 @@ if ($population == '') {
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Salut, moi c'est Clément Darne, je suis étudiant en informatique et voici mon site Web personnel.">
+    <meta name="description" content="Salut, moi c'est Clément et voici mon site vitrine. Je fais partie des 8 milliards êtres humains qui peuplent cette belle planète qu'est la Terre. Actuellement passioné par mes études d'informatique, j'aspire à continuer en recherche.">
     <meta name="author" content="Clément Darne">
     <title>Clément Darne</title>
 
@@ -69,13 +70,13 @@ if ($population == '') {
       <div class="container home-container">
 
         <section id="projects">
-          <?php
-            echo "1";
-            require_once __DIR__.'/../src/projects.php';
-            echo "2";
-            displayProjects();
-            echo "3";
-          ?>
+          <h2>Projets</h2>
+          <div class="cards">
+            <?php
+              require_once __DIR__.'/../src/projects.php';
+              displayProjects();
+            ?>
+          </div>
         </section>
 
         <section id="about">
