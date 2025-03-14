@@ -50,7 +50,7 @@ function displayProjects() {
         <div class='card'>
           $startATag
           <!-- If no thumbnail, show card title instead -->
-          <img class='card-image' src='./$thumbnail' height='500' width='500' alt='$name'/>
+          <img class='card-image' src='./assets/img/$thumbnail' height='500' width='500' alt='$name'/>
           <div class='overlay card-body'>
             <h3>$name</h3>
             <p class='card-text'>
