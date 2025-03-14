@@ -1,6 +1,6 @@
 <?php
 
-function getWorldPopulationString(): str {
+function getWorldPopulationString(): string {
   require_once __DIR__.'/../src/base.php';
   loadEnv();
 
