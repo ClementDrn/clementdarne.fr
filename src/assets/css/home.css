@@ -185,6 +185,136 @@ strong {
  */
 
 #about {
+  text-align: left;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+
+  .timeline {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+
+    .item-group {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: relative;
+      min-height: 60px;
+    }
+
+    /* Left border */
+    .item-group::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      height: 100%;
+      top: 0;
+      border-left: 4px solid var(--theme-color);
+    }
+    /* Cut border for bottom item */
+    .item-group.first::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      height: calc(100% - 30px);  /* 30px is an arbitrary shift */
+      top: 0;
+      bottom: 30px;
+      border-left: 4px solid var(--theme-color);
+    }
+    /* Cut border for top item */
+    .item-group.last::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      height: calc(100% - 30px);  /* 30px is an arbitrary shift */
+      top: 30px;
+      bottom: 0;
+      border-left: 4px solid var(--theme-color);
+    }
+    /* Cut border for single item (top & bottom) */
+    .item-group.first.last::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      height: calc(100% - 2 * 30px);  /* 30px is an arbitrary shift */
+      top: 30px;
+      bottom: 30px;
+      border-left: 4px solid var(--theme-color);
+    }
+    /* Extend border with dashes for topest element*/
+    .item-group.very-last::after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      height: 40px;
+      top: -10px;
+      border-left: 4px dashed var(--theme-color);
+    }
+
+    .item-group > .item-group {
+      margin-left: 40px;
+    }
+
+    .branch-svg {
+      width: 200px;
+      height: 100px;
+      position: relative;
+    }
+    .branch-in {
+      top: -30px;
+      margin-bottom: -60px;
+    }
+    .branch-out {
+      bottom: -30px;
+      margin-top: -60px;
+    }
+
+  }
+    
+
+  .timeline-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+  }
+  .milestone {
+    position: relative;
+    left: -5px;
+    width: 15px;
+    height: 15px;
+    background: var(--theme-bg1);
+    border: 3px solid var(--theme-color);
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 0px 1px 5px rgba(17, 17, 17, .5);
+  }
+  .icon {
+    font-size: 24px;
+    margin-right: 10px;
+    z-index: 1;
+  }
+  .content {
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    text-align: left;
+    background: none;
+  }
+  .date {
+    font-size: 14px;
+    color: #aaa;
+  }
 
 }
 
