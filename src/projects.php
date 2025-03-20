@@ -1,40 +1,55 @@
 <?php
 
 require_once __DIR__.'/../vendor/autoload.php';
-require_once __DIR__.'/database.php';
 
 
 function displayProjects() {
-  // Get the projects from the database
-  // project: id, visible, title, released, link, thumbnail, summary, start_year, end_year
-  $db = connectToDB();
-  $projects = $db->query("SELECT * FROM Projects ORDER BY start_year, end_year DESC")->fetchAll();
+  // Load projects from JSON file
+  $jsonFile = __DIR__ . '/../data/projects.json';
+  if (!file_exists($jsonFile)) {
+    die('Projects JSON file not found.');
+  }
 
-  // Display the projects
+  $jsonData = file_get_contents($jsonFile);
+  $projects = json_decode($jsonData, true);
+
+  if (!is_array($projects)) {
+    die('Invalid JSON format.');
+  }
+
+  // Sort projects: first by start_year (descending), then by end_year (descending)
+  usort($projects, function($a, $b) {
+    if ($a['start_year'] === $b['start_year']) {
+      $endA = isset($a['end_year']) ? $a['end_year'] : PHP_INT_MIN;
+      $endB = isset($b['end_year']) ? $b['end_year'] : PHP_INT_MIN;
+      return $endB <=> $endA;
+    }
+    return $b['start_year'] <=> $a['start_year'];
+  });
+
+  // Render projects with the same HTML output as before
   foreach ($projects as $project) {
-    // Skip if should not be visible
-    $visible = $project['visible'];
-    if ($visible == null || $visible == false) {
+    // Skip if not visible
+    if (!isset($project['visible']) || $project['visible'] !== true) {
       continue;
     }
-
+    
     // Get important properties
-    $name = $project['title'];
-
-    // Skip if important properties are not accessible
-    if ($name == null || $name == '') {
+    $name = $project['title'] ?? '';
+    if ($name === '') {
       continue;
     }
-
-    // Get other properties
-    // $released     = $project['released'] ? $project['released'] : false;
-    $link         = $project['link'] != null ? $project['link'] : '';
-    $thumbnail    = $project['thumbnail'] != null ? $project['thumbnail'] : '';
-    $description  = $project['summary'] != null ? Parsedown::instance()->line($project['summary']) : '';
-    $date         = $project['start_year'] != null
-                    ? ($project['start_year'] . ' - ' . (($project['end_year'] != null) ? $project['end_year'] : "today"))
-                    : '';
-
+    
+    // Other properties
+    $link      = $project['link'] ?? '';
+    $thumbnail = $project['thumbnail'] ?? '';
+    $description = isset($project['summary']) && $project['summary'] !== null
+                     ? Parsedown::instance()->line($project['summary'])
+                     : '';
+    $date = $project['start_year'] != null
+            ? ($project['start_year'] . ' - ' . (($project['end_year'] != null) ? $project['end_year'] : "today"))
+            : '';
+            
     // If an external link is provided, add it to HTML page
     $startATag = '';
     $endATag = '';
@@ -44,7 +59,7 @@ function displayProjects() {
       $endATag = '</a>';
       $linkIconTag = "<i class='bi bi-box-arrow-up-right'></i>";
     }
-
+    
     // Display HTML
     echo <<<HTML
       <div class='card'>
