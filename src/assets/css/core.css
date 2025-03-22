@@ -12,6 +12,9 @@
   --ash-grey: #acb9b3;
   --tea-rose: #eeb4b3;
   --rosy-brown: #cb9392;
+  --rose-red: #CF1259;
+  --wanthous: #F7B538;
+
 
   --theme-bg1: var(--eerie-black);
   --theme-bg2: var(--gunmetal);
@@ -22,6 +25,8 @@
   --theme-muted: var(--ash-grey);
   --theme-contrast: var(--tea-rose);
   --theme-contrast-muted: var(--rosy-brown);
+  --theme-important: var(--rose-red);
+  --theme-highlight: var(--wanthous);
 
   --dark: #222831;
   --gray: #393e46;
@@ -279,7 +284,7 @@ strong {
   width: 100%;
   transition: box-shadow .2s;
   background-color: var(--theme-bg2);
-  z-index: 1;
+  z-index: 1000;
 }
 
 nav {
@@ -386,14 +391,16 @@ h3.nav-title {
 footer {
   color: var(--theme-muted);
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
   text-align: center;
   font-size: .6rem;
+  padding: 1rem 0 .2rem;
 }
 
 footer > p {
-  margin: .3rem 0 .2rem;
+  margin: 0;
 }
 
 footer a {
