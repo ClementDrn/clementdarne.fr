@@ -93,9 +93,7 @@ $asciiPortrait = file_exists($asciiPath) ? file_get_contents($asciiPath) : '';
 
           <h2>À propos de moi</h2>
           <div class="shell-terminal">
-            <header>
-              <h3>root@clementdarne:~$ cat whoami.txt</h3>
-            </header>
+            <h3>root@clementdarne:~$ cat whoami.txt</h3>
             <div class="shell-content">
               <div class="shell-text">
                 <p><strong>Utilisateur:</strong> Clément DARNE</p>
@@ -132,37 +130,39 @@ $asciiPortrait = file_exists($asciiPath) ? file_get_contents($asciiPath) : '';
           </div>
         </section>
 
-        <section id="contact" class="row contact-list">
-          <a class="contact" id="email-contact" href="mailto:cledarne@gmail.com" target="_blank">
-            <i class="bi-envelope"></i>
-            <p>cledarne@gmail.com</p>
-          </a>
-          <a class="contact" id="github-contact" href="https://github.com/ClementDrn" target="_blank">
-            <i class="bi-github"></i>
-            <p>@ClementDrn</p>
-          </a>
-          <a class="contact" id="linkedin-contact" href="https://www.linkedin.com/in/clement-darne/" target="_blank">
-            <i class="bi-linkedin"></i>
-            <p>@clement-darne</p>
-          </a>
-        </section>
-
       </div>
     </main>
 
     <footer>
-      <p class="license">
-        Icônes colorées créées par
-        <a href="https://www.flaticon.com/free-icons" title="icons">
-          Freepik - Flaticon
-        </a>.
-      </p>
-      <p class="license">
-        Ce site web est mis à disposition selon les termes de la
-        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-          Licence Creative Commons Attribution 4.0 International
-        </a>. 
-      </p>
+      <div id="contact" class="row contact-list">
+        <a class="contact" id="email-contact" href="mailto:cledarne@gmail.com" target="_blank">
+          <i class="bi-envelope"></i>
+          <p>cledarne@gmail.com</p>
+        </a>
+        <a class="contact" id="github-contact" href="https://github.com/ClementDrn" target="_blank">
+          <i class="bi-github"></i>
+          <p>@ClementDrn</p>
+        </a>
+        <a class="contact" id="linkedin-contact" href="https://www.linkedin.com/in/clement-darne/" target="_blank">
+          <i class="bi-linkedin"></i>
+          <p>@clement-darne</p>
+        </a>
+      </div>
+
+      <div class="license-list">
+        <p class="license">
+          Icônes colorées créées par
+          <a href="https://www.flaticon.com/free-icons" title="icons">
+            Freepik - Flaticon
+          </a>.
+        </p>
+        <p class="license">
+          Ce site web est mis à disposition selon les termes de la
+          <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+            Licence Creative Commons Attribution 4.0 International
+          </a>. 
+        </p>
+      </div>
     </footer>
 
   </body>
