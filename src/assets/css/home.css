@@ -23,7 +23,7 @@ p {
 }
 
 strong {
-  color: var(--theme-color);
+  color: var(--theme-color-light);
 }
 
 section + section {
@@ -199,6 +199,7 @@ section + section {
     margin-bottom: 4rem;
   }
 
+  /* Timeline */
   .timeline {
     position: relative;
     margin-top: 20px;
@@ -365,6 +366,62 @@ section + section {
       /* Border is handled by PHP */
     }
   }
+
+  /* Shell */
+  .shell-terminal {
+    background-color: #161a1e;
+    color: var(--theme-light);
+    font-family: monospace;
+    border: 2px solid var(--theme-contrast);
+    border-radius: 15px;
+    margin: 2rem auto 6rem;
+    max-width: 800px;
+    box-shadow: rgba(17, 17, 17, 0.1) 0px 8px 24px, rgba(17, 17, 17, 0.1) 0px 16px 56px, rgba(17, 17, 17, 0.1) 0px 24px 80px;
+
+    h3 {
+      padding: 0.6rem;
+      background-color: var(--theme-bg2);
+      border-radius: 15px 15px 0 0;
+      border-bottom: 1px solid var(--theme-light);
+      font-size: 1rem;
+      text-align: center;
+      font-weight: 600;
+    }
+    
+    .shell-content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: .2rem;
+      
+      .shell-text {
+        flex: 1;
+        line-height: 1.5;
+        min-width: 265px;
+        
+        p {
+          margin: 0;
+        }
+
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+        }
+      }
+
+      .ascii-portrait {
+        margin: 0;
+        white-space: pre;
+        overflow-x: auto;
+        font-size: 0.8rem;
+        line-height: 1;
+      }
+    }
+    
+  }
+  
 }
 
 /**

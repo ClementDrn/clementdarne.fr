@@ -220,7 +220,7 @@
             "type": "misc",
             "title": "Marathon de Kobe",
             "date": "2024",
-            "description": "Épreuve mentale : Sagesse +20, Consitution +5",
+            "description": "Épreuve mentale : Sagesse +15, Consitution +5",
             "rootColor": "#4C9E8F",
             "color": "#4C9E8F",
             "icon": "assets/img/freepik/run.png"

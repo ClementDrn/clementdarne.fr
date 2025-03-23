@@ -11,6 +11,16 @@ $population = getWorldPopulationString();
 if ($population == '') {
   $population = "8 milliards";  // default value
 }
+
+// Calculate age from birthdate (2002-03-24)
+$birthdate = new DateTime("2002-03-24");
+$today = new DateTime();
+$diff = $today->diff($birthdate);
+$ageStr = "$diff->y ans, $diff->m mois et $diff->d jour".($diff->d > 1 ? 's' : '');
+
+// Load ASCII portrait from file, if available.
+$asciiPath = __DIR__ . '/../public/assets/img/clementdarne_2025_ascii.txt';
+$asciiPortrait = file_exists($asciiPath) ? file_get_contents($asciiPath) : '';
 ?>
 
 <!doctype html>
@@ -81,7 +91,39 @@ if ($population == '') {
 
         <section id="about">
 
-          <h2>My Journey</h2>
+          <h2>À propos de moi</h2>
+          <div class="shell-terminal">
+            <header>
+              <h3>root@clementdarne:~$ cat whoami.txt</h3>
+            </header>
+            <div class="shell-content">
+              <div class="shell-text">
+                <p><strong>Utilisateur:</strong> Clément DARNE</p>
+                <p><strong>Âge:</strong> <?php echo $ageStr; ?></p>
+                <p><strong>Taille:</strong> 1.86 m</p>
+                <p><strong>Diplôme:</strong> DUT Informatique</p>
+                <p><strong>Langues:</strong> Français, Anglais, Japonais</p>
+                <p><strong>Loisirs:</strong> Informatique, Musique, Jeux vidéo</p>
+                <p><strong>Compétences:</strong> Hardware, IA, Systèmes embarqués, Logiciel</p>
+                <p><strong>Objectif:</strong> Devenir chercheur en informatique</p>
+                <p>
+                  <strong>Stats:</strong>
+                  <ul>
+                    <li>- <strong>Force:</strong> 9</li>
+                    <li>- <strong>Constitution:</strong> 16</li>
+                    <li>- <strong>Dextérité:</strong> 13</li>
+                    <li>- <strong>Intelligence:</strong> 27</li>
+                    <li>- <strong>Sagesse:</strong> 25</li>
+                    <li>- <strong>Charisme:</strong> 14</li>
+                  </ul>
+                </p>
+                <p><strong>Titre:</strong> <em>Maître du débogage</em> [INT+5, CHAR-5]</p>
+              </div>
+              <?php if (!empty($asciiPortrait)): ?>
+                <pre class="ascii-portrait"><?php echo htmlspecialchars($asciiPortrait); ?></pre>
+              <?php endif; ?>
+            </div>
+          </div>
           <div class="timeline">
             <?php 
               require_once __DIR__.'/../src/journey.php';
