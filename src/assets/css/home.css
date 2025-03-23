@@ -34,7 +34,7 @@ section + section {
  * Header
  */
 
- .header-fixed {
+.header-fixed {
   position: fixed;
   top: 0;
   width: 100%;
@@ -67,7 +67,17 @@ h3.nav-title {
   flex: 1;
   font-weight: 500;
   align-self: center;
-  color: var(--theme-contrast);
+
+  /* not active selector */
+  :not(.active) {
+    transition: color .15s ease-in-out;
+    color: var(--theme-contrast);
+  }
+
+  .active {
+    transition: color .15s ease-in-out;
+    color: var(--theme-color-light);
+  }
 }
 
 @media (max-width: 600px) {

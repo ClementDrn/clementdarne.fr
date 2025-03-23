@@ -46,10 +46,9 @@ $asciiPortrait = file_exists($asciiPath) ? file_get_contents($asciiPath) : '';
     <header class="header-fixed">
       <div class="navigation-bar">
         <h3 class="nav-title">
-          <a href="/" title="Accueil">Clément Darne</a>
+          <a id="nav-home" class="active" href="#" aria-current="page" title="Accueil">Clément Darne</a>
         </h3>
         <nav>
-          <a id="nav-home" class="nav-link active" aria-current="page" href="#start-page">Accueil</a>
           <a id="nav-projects" class="nav-link" href="#projects">Projets</a>
           <a id="nav-about" class="nav-link" href="#about">À propos de moi</a>
           <a id="nav-contact" class="nav-link" href="#contact">Contact</a>
