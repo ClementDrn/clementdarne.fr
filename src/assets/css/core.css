@@ -6,27 +6,31 @@
   --eerie-black: #1e2327;
   --gunmetal: #2b3339;
   --sea-green: #458e68;
+  --sea-green1: #53AC7E;
   --hookers-green: #3f6e56;
   --dark-slate-gray: #234a36;
   --mint-cream: #e2eae6;
   --ash-grey: #acb9b3;
   --tea-rose: #eeb4b3;
   --rosy-brown: #cb9392;
-  --rose-red: #CF1259;
-  --wanthous: #F7B538;
+  --pale-violet-red: #c7527f;
+  --burly-wood: #d7ae63;
+  --dark-cyan: #4C9E8F;
+  --sea-green2: #3C7C44;
 
 
   --theme-bg1: var(--eerie-black);
   --theme-bg2: var(--gunmetal);
   --theme-color: var(--sea-green);
+  --theme-color-light: var(--sea-green1);
   --theme-color-muted: var(--hookers-green);
   --theme-color-dark: var(--dark-slate-gray);
   --theme-light: var(--mint-cream);
   --theme-muted: var(--ash-grey);
   --theme-contrast: var(--tea-rose);
   --theme-contrast-muted: var(--rosy-brown);
-  --theme-important: var(--rose-red);
-  --theme-highlight: var(--wanthous);
+  --theme-important: var(--pale-violet-red);
+  --theme-highlight: var(--burly-wood);
 
   --dark: #222831;
   --gray: #393e46;

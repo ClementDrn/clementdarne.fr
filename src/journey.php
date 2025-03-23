@@ -1,7 +1,6 @@
 <?php
 
 require_once __DIR__.'/../vendor/autoload.php';
-// Removed: require_once __DIR__.'/database.php';
 
 $colors = [];
 
@@ -56,13 +55,15 @@ function displayJourney() {
       ."'>";
 
     // -- Body
+    $title = Parsedown::instance()->line($event['title']);
+    $description = Parsedown::instance()->line($event['description']);
     echo "<div class='body'>";
     echo "<div class='milestone $colorClass'></div>";
     echo "<img class='icon' src='{$event['icon']}' width='128' height='128' alt='icon'/>";
     echo "<div class='content'>";
-    echo "<h3>{$event['title']}</h3>";
     echo "<p class='date'>{$event['date']}</p>";
-    echo "<p>{$event['description']}</p>";
+    echo "<h3>$title</h3>";
+    echo "<p>$description</p>";
     echo "</div></div>";  // .content .body 
 
     // -- Branching

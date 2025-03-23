@@ -1,0 +1,241 @@
+[
+  {
+    "type": "misc",
+    "title": "Zone de départ : **France**",
+    "date": "2002",
+    "description": "Né à Lyon, en France : Résistance froid +5, Résistance chaleur -5",
+    "rootColor": "#3C7C44",
+    "color": "#3C7C44",
+    "icon": "assets/img/freepik/made-in-france.png"
+  },
+  {
+    "type": "school",
+    "title": "Tutoriel : École primaire",
+    "date": "2004",
+    "description": "Conditions de succès : survivre",
+    "rootColor": "#3C7C44",
+    "color": "#458e68",
+    "icon": "assets/img/freepik/school-bag.png",
+    "children": [
+      {
+        "type": "misc",
+        "title": "Déplacement vers la Martinique",
+        "date": "2005",
+        "description": "Compétence acquise : Voyageur Niv.1, Constitution -5 (chaleur)",
+        "rootColor": "#458e68",
+        "color": "#4C9E8F",
+        "icon": "assets/img/freepik/made-in-france.png",
+        "children": [
+          {
+            "type": "misc",
+            "title": "Premier livre lu",
+            "date": "2008",
+            "description": "Compétence acquise : Lecture Niv.1, Intelligence +3",
+            "rootColor": "#4C9E8F",
+            "color": "#4C9E8F",
+            "icon": "assets/img/freepik/book.png"
+          },
+          {
+            "type": "misc",
+            "title": "Premier concert",
+            "date": "2009",
+            "description": "Cassage d'oreilles : Dextérité +2, Constitution: +3, Charisme -5",
+            "rootColor": "#4C9E8F",
+            "color": "#4C9E8F",
+            "icon": "assets/img/freepik/violin.png"
+          }
+        ]
+      },
+      {
+        "type": "misc",
+        "title": "Retour en France",
+        "date": "2011",
+        "description": "Compétence acquise : Adaptation Niv.1, Constitution +5 (froid)",
+        "rootColor": "#458e68",
+        "color": "#4C9E8F",
+        "icon": "assets/img/freepik/airplane.png"
+      }
+    ]
+  },
+  {
+    "type": "school",
+    "title": "Fin du tutoriel : École primaire",
+    "date": "2013",
+    "description": "Compétence acquise : Étudiant Niv.1, Intelligence +5",
+    "rootColor": "#3C7C44",
+    "color": "#458e68",
+    "icon": "assets/img/freepik/school-bag.png"
+  },
+  {
+    "type": "school",
+    "title": "1re quête : Enseignement secondaire",
+    "date": "2013",
+    "description": "Conditions de succès : Vaincre l'épreuve du bac",
+    "rootColor": "#3C7C44",
+    "color": "#458e68",
+    "icon": "assets/img/freepik/school-bag.png",
+    "children": [
+      {
+        "type": "misc",
+        "title": "Premier ordinateur",
+        "date": "2014",
+        "description": "Compétence acquise : Geek Niv.1, Intelligence +3, Force -5",
+        "rootColor": "#458e68",
+        "color": "#458e68",
+        "icon": "assets/img/freepik/computer.png"
+      },
+      {
+        "type": "misc",
+        "title": "Compétitions de basket",
+        "date": "2015",
+        "description": "Entrainement mortel : Force +2, Sagesse +5",
+        "rootColor": "#458e68",
+        "color": "#458e68",
+        "icon": "assets/img/freepik/basketball.png"
+      },
+      {
+        "type": "misc",
+        "title": "Premier code informatique",
+        "date": "2017",
+        "description": "Compétence acquise : Développeur Niv.1, Charisme -3",
+        "rootColor": "#458e68",
+        "color": "#458e68",
+        "icon": "assets/img/freepik/coding.png"
+      },
+      {
+        "type": "misc",
+        "title": "1 an en Irlande",
+        "date": "2018",
+        "description": "Compétences acquises : Voyageur Niv.2, Anglais Niv.2",
+        "rootColor": "#458e68",
+        "color": "#458e68",
+        "icon": "assets/img/freepik/irlande.png"
+      }
+    ]
+  },
+  {
+    "type": "school",
+    "title": "Baccaulauréat vaincu",
+    "date": "2020",
+    "description": "Compétence acquise : Étudiant Niv.2, Intelligence +5",
+    "rootColor": "#3C7C44",
+    "color": "#458e68",
+    "icon": "assets/img/freepik/school.png"
+  },
+  {
+    "type": "school",
+    "title": "2e quête : IUT Lyon 1",
+    "date": "2020",
+    "description": "Conditions de succès : Obtenir le DUT Informatique",
+    "rootColor": "#3C7C44",
+    "color": "#458e68",
+    "icon": "assets/img/freepik/school0.png",
+    "children": [
+      {
+        "type": "job",
+        "title": "Travail : Étudiant tuteur",
+        "date": "2021",
+        "description": "Aide des étudiants en 1re année : Intelligence +3, Charisme +5",
+        "rootColor": "#458e68",
+        "color": "#458e68",
+        "icon": "assets/img/freepik/tutoring.png"
+      },
+      {
+        "type": "exchange",
+        "title": "Quête secondaire : Échange au Cégep de Matane",
+        "date": "2022",
+        "description": "Conditions de succès : Survivre à l'hiver canadien",
+        "rootColor": "#458e68",
+        "color": "#4C9E8F",
+        "icon": "assets/img/freepik/canada.png",
+        "children": [
+          {
+            "type": "internship",
+            "title": "Stage informatique au [CDRIN](https://www.cdrin.com/)",
+            "date": "2022",
+            "description": "Compétence acquise : Développeur Niv.2, Intelligence +3",
+            "rootColor": "#4C9E8F",
+            "color": "#4C9E8F",
+            "icon": "assets/img/freepik/game-dev.png"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "school",
+    "title": "2e quête accomplie : DUT Informatique",
+    "date": "2022",
+    "description": "Développeur Niv.3, Intelligence +5",
+    "rootColor": "#3C7C44",
+    "color": "#458e68",
+    "icon": "assets/img/freepik/graduation.png"
+  },
+  {
+    "type": "school",
+    "title": "3e quête : Grenoble INP - Ensimag",
+    "date": "2022 - 2025",
+    "description": "Conditions de succès : Obtenir le diplôme d'ingénieur",
+    "rootColor": "#3C7C44",
+    "color": "#458e68",
+    "icon": "assets/img/freepik/school1.png",
+    "children": [
+      {
+        "type": "misc",
+        "title": "Ski à Grenoble",
+        "date": "2023",
+        "description": "Nombreuses chutes : Ski Niv.1-2-3, Constitution +10",
+        "rootColor": "#458e68",
+        "color": "#458e68",
+        "icon": "assets/img/freepik/ski.png"
+      },
+      {
+        "type": "internship",
+        "title": "Stage en IA & hardware à [TIMA](https://tima.univ-grenoble-alpes.fr/)",
+        "date": "2023",
+        "description": "Développeur Niv.3 évolue en Ingénieur Niv.1",
+        "rootColor": "#458e68",
+        "color": "#458e68",
+        "icon": "assets/img/freepik/chip.png"
+      },
+      {
+        "type": "internship",
+        "title": "Stage en systèmes embarqués chez [DIAMSENS](https://www.diamsens.com/)",
+        "date": "2024",
+        "description": "Compétence acquise : Ingénieur Niv.2, Intelligence +3, Sagesse +2",
+        "rootColor": "#458e68",
+        "color": "#458e68",
+        "icon": "assets/img/freepik/motherboard.png"
+      },
+      {
+        "type": "exchange",
+        "title": "Quête secondaire : Échange à Kobe University",
+        "date": "2024",
+        "description": "Conditions de succès : Parler japonais",
+        "rootColor": "#458e68",
+        "color": "#4C9E8F",
+        "icon": "assets/img/freepik/japan.png",
+        "children": [
+          {
+            "type": "misc",
+            "title": "Marathon de Kobe",
+            "date": "2024",
+            "description": "Épreuve mentale : Sagesse +20, Consitution +5",
+            "rootColor": "#4C9E8F",
+            "color": "#4C9E8F",
+            "icon": "assets/img/freepik/run.png"
+          },
+          {
+            "type": "research",
+            "title": "Recherche en IA",
+            "date": "2025",
+            "description": "Compétence acquise : Chercheur Niv.1, Intelligence +5",
+            "rootColor": "#4C9E8F",
+            "color": "#4C9E8F",
+            "icon": "assets/img/freepik/research.png"
+          }
+        ]
+      }
+    ]
+  }
+]
