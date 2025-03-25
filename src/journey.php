@@ -1,6 +1,7 @@
 <?php
 
 require_once __DIR__.'/../vendor/autoload.php';
+require_once __DIR__.'/colors.php';
 
 $colors = [];
 
@@ -24,7 +25,14 @@ function displayJourney() {
     // Remove the # from the color
     $hexStr = substr($color, 1);
     $colorClass = "color-$hexStr";
-    
+
+    // Compute lightened color
+    $rgb = hexToRgb($hexStr);
+    $hsl = rgbToHsl($rgb['r'], $rgb['g'], $rgb['b']);
+    $hsl['l'] = min(1, $hsl['l'] + 0.1);
+    $rgb = hslToRgb($hsl['h'], $hsl['s'], $hsl['l']);
+    $lightenedColor = rgbToHex($rgb['r'], $rgb['g'], $rgb['b']);
+
     // If the color is not in the list, add it with the corresponding style
     if (!in_array($hexStr, $colors)) {
       $colors[] = $hexStr;
@@ -35,6 +43,7 @@ function displayJourney() {
       echo ".$colorClass.branch-group::after { border-left: 4px dashed $color; }";
       echo ".$colorClass.branching-border { border-left: 4px solid $color; }";
       echo ".$colorClass.milestone { border: 3px solid $color; }";
+      echo "h3.$colorClass { color: #$lightenedColor; }";
       echo "</style>";
     }
 
@@ -62,7 +71,7 @@ function displayJourney() {
     echo "<img class='icon' src='{$event['icon']}' width='128' height='128' alt='icon'/>";
     echo "<div class='content'>";
     echo "<p class='date'>{$event['date']}</p>";
-    echo "<h3>$title</h3>";
+    echo "<h3 class='$rootColorClass'>$title</h3>";
     echo "<p>$description</p>";
     echo "</div></div>";  // .content .body 
 

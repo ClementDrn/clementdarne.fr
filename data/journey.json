@@ -1,7 +1,7 @@
 [
   {
     "type": "misc",
-    "title": "Zone de départ : **France**",
+    "title": "Zone de départ : France",
     "date": "2002",
     "description": "Né à Lyon, en France : Résistance froid +5, Résistance chaleur -5",
     "rootColor": "#3C7C44",
@@ -24,7 +24,7 @@
         "description": "Compétence acquise : Voyageur Niv.1, Constitution -5 (chaleur)",
         "rootColor": "#458e68",
         "color": "#4C9E8F",
-        "icon": "assets/img/freepik/made-in-france.png",
+        "icon": "assets/img/freepik/island.png",
         "children": [
           {
             "type": "misc",
@@ -33,7 +33,7 @@
             "description": "Compétence acquise : Lecture Niv.1, Intelligence +3",
             "rootColor": "#4C9E8F",
             "color": "#4C9E8F",
-            "icon": "assets/img/freepik/book.png"
+            "icon": "assets/img/freepik/read.png"
           },
           {
             "type": "misc",
@@ -64,7 +64,7 @@
     "description": "Compétence acquise : Étudiant Niv.1, Intelligence +5",
     "rootColor": "#3C7C44",
     "color": "#458e68",
-    "icon": "assets/img/freepik/school-bag.png"
+    "icon": "assets/img/freepik/grade.png"
   },
   {
     "type": "school",
@@ -73,7 +73,7 @@
     "description": "Conditions de succès : Vaincre l'épreuve du bac",
     "rootColor": "#3C7C44",
     "color": "#458e68",
-    "icon": "assets/img/freepik/school-bag.png",
+    "icon": "assets/img/freepik/books.png",
     "children": [
       {
         "type": "misc",
@@ -82,7 +82,7 @@
         "description": "Compétence acquise : Geek Niv.1, Intelligence +3, Force -5",
         "rootColor": "#458e68",
         "color": "#458e68",
-        "icon": "assets/img/freepik/computer.png"
+        "icon": "assets/img/freepik/laptop.png"
       },
       {
         "type": "misc",
@@ -100,7 +100,7 @@
         "description": "Compétence acquise : Développeur Niv.1, Charisme -3",
         "rootColor": "#458e68",
         "color": "#458e68",
-        "icon": "assets/img/freepik/coding.png"
+        "icon": "assets/img/freepik/code.png"
       },
       {
         "type": "misc",
@@ -109,22 +109,22 @@
         "description": "Compétences acquises : Voyageur Niv.2, Anglais Niv.2",
         "rootColor": "#458e68",
         "color": "#458e68",
-        "icon": "assets/img/freepik/irlande.png"
+        "icon": "assets/img/freepik/ireland.png"
       }
     ]
   },
   {
     "type": "school",
-    "title": "Baccaulauréat vaincu",
+    "title": "Baccalauréat vaincu",
     "date": "2020",
     "description": "Compétence acquise : Étudiant Niv.2, Intelligence +5",
     "rootColor": "#3C7C44",
     "color": "#458e68",
-    "icon": "assets/img/freepik/school.png"
+    "icon": "assets/img/freepik/certificate.png"
   },
   {
     "type": "school",
-    "title": "2e quête : IUT Lyon 1",
+    "title": "2e quête : [IUT Lyon 1](https://iut.univ-lyon1.fr/)",
     "date": "2020",
     "description": "Conditions de succès : Obtenir le DUT Informatique",
     "rootColor": "#3C7C44",
@@ -142,7 +142,7 @@
       },
       {
         "type": "exchange",
-        "title": "Quête secondaire : Échange au Cégep de Matane",
+        "title": "Quête secondaire : Échange au [Cégep de Matane](https://www.cegep-matane.qc.ca/)",
         "date": "2022",
         "description": "Conditions de succès : Survivre à l'hiver canadien",
         "rootColor": "#458e68",
@@ -173,7 +173,7 @@
   },
   {
     "type": "school",
-    "title": "3e quête : Grenoble INP - Ensimag",
+    "title": "3e quête : [Grenoble INP - Ensimag](https://ensimag.grenoble-inp.fr/)",
     "date": "2022 - 2025",
     "description": "Conditions de succès : Obtenir le diplôme d'ingénieur",
     "rootColor": "#3C7C44",
@@ -187,7 +187,7 @@
         "description": "Nombreuses chutes : Ski Niv.1-2-3, Constitution +10",
         "rootColor": "#458e68",
         "color": "#458e68",
-        "icon": "assets/img/freepik/ski.png"
+        "icon": "assets/img/freepik/ski-resort.png"
       },
       {
         "type": "internship",
@@ -209,7 +209,7 @@
       },
       {
         "type": "exchange",
-        "title": "Quête secondaire : Échange à Kobe University",
+        "title": "Quête secondaire : Échange à [Kobe University](https://www.kobe-u.ac.jp/en/)",
         "date": "2024",
         "description": "Conditions de succès : Parler japonais",
         "rootColor": "#458e68",
@@ -223,7 +223,7 @@
             "description": "Épreuve mentale : Sagesse +15, Consitution +5",
             "rootColor": "#4C9E8F",
             "color": "#4C9E8F",
-            "icon": "assets/img/freepik/run.png"
+            "icon": "assets/img/freepik/marathon.png"
           },
           {
             "type": "research",

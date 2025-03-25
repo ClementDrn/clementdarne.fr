@@ -92,7 +92,19 @@ $asciiPortrait = file_exists($asciiPath) ? file_get_contents($asciiPath) : '';
 
           <h2>À propos de moi</h2>
           <div class="shell-terminal">
-            <h3>root@clementdarne:~$ cat whoami.txt</h3>
+            <div class="shell-header">
+              <h3>root@clementdarne:~$ cat whoami.txt</h3>
+              <div class="shell-buttons">
+                <div class="shell-button yellow"></div>
+                <div class="shell-button green"></div>
+                <div class="shell-button red" id="redButton"></div>
+                <script>
+                  document.getElementById('redButton').addEventListener('click', function(){
+                    alert("No! Don't press the red button!");
+                  });
+                </script>
+              </div>
+            </div>
             <div class="shell-content">
               <div class="shell-text">
                 <p><strong>Utilisateur:</strong> Clément DARNE</p>
@@ -100,7 +112,7 @@ $asciiPortrait = file_exists($asciiPath) ? file_get_contents($asciiPath) : '';
                 <p><strong>Taille:</strong> 1.86 m</p>
                 <p><strong>Diplôme:</strong> DUT Informatique</p>
                 <p><strong>Langues:</strong> Français, Anglais, Japonais</p>
-                <p><strong>Loisirs:</strong> Informatique, Musique, Jeux vidéo</p>
+                <p><strong>Loisirs:</strong> Informatique, Photographie, Musique, Jeux vidéo</p>
                 <p><strong>Compétences:</strong> Hardware, IA, Systèmes embarqués, Logiciel</p>
                 <p><strong>Objectif:</strong> Devenir chercheur en informatique</p>
                 <p>
@@ -114,7 +126,7 @@ $asciiPortrait = file_exists($asciiPath) ? file_get_contents($asciiPath) : '';
                     <li>- <strong>Charisme:</strong> 14</li>
                   </ul>
                 </p>
-                <p><strong>Titre:</strong> <em>Maître du débogage</em> [INT+5, CHAR-5]</p>
+                <p><strong>Titre:</strong> Maître du débogage [INT+5, CHA-5]</p>
               </div>
               <?php if (!empty($asciiPortrait)): ?>
                 <pre class="ascii-portrait"><?php echo htmlspecialchars($asciiPortrait); ?></pre>
