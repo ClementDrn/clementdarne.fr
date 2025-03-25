@@ -1,8 +1,10 @@
+![SEL](thumbnail.jpg)
+
 ## Présentation
 
 Au fur et à mesure des mes projets, je venais à **réutiliser des anciens morceaux de code**. C'est pourquoi j'ai décidé de regrouper plusieurs classes utilitaires dans une même librairie.
 
-SEL a commencé avec seulement quelques fichiers utilitaires de petite taille, puis s'y sont ajoutés des classes sur les **threads**, les **vecteurs**, les **nombres aléatoires** ou même les **matrices**.
+*SEL* a commencé avec seulement quelques fichiers utilitaires de petite taille, puis s'y sont ajoutés des classes sur les **threads**, les **vecteurs**, les **nombres aléatoires** ou même les **matrices**.
 
 Comme son nom l'indique, cette librairie a pour but d'être **facile d'usage**. Pour cela, elle sera **documentée** tout au long des ajouts de nouvelles fonctionnalitées et utilisera uniquement des fichiers d'entête. 
 
@@ -14,6 +16,12 @@ L'utilisation exclusive des **fichiers d'entête** sans fichiers sources vise à
 
 ### Optimisations
 
-Je prévois d'utiliser les fonctions *SSE intrinsics* ([doc Intel](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html)) pour grandement **optimiser les opérations** effectuées sur les vecteurs et matrices de SEL.
+Je prévois d'utiliser les fonctions *SSE intrinsics* ([doc Intel](https://www.intel.com/content/www/us/en/docs/intrinsics-guide/index.html)) pour grandement **optimiser les opérations** effectuées sur les vecteurs et matrices de *SEL*.
 
 De plus, j'ai choisi d'utiliser, pour les matrices notamment, des algorithmes optimisés en termes d'**accès à la mémoire** plutôt que d'implémenter les opérations de manières naïves et scolaire.
+
+### La documentation
+
+Comme ce projet est une librairie à destination des développeurs C++, une **documentation efficace et complète** doit l'accompagner pour aider ces derniers dans son utilisation. Rédiger une documentation tout en gérant les multitudes liens entre les classes et modules peut s'avérer long et fastidieux. C'est pourquoi il existe des outils permettant de **générer la documentation** à partir de **commentaires** dans le code.
+
+J'ai pour ma part choisi l'outil [Doxygen](https://www.doxygen.nl/index.html) permettant de générer une documentation **HTML ou PDF**. J'avais au préalable vu plusieurs projets utiliser cet outil et aussi une fonctionnalité *Doxygen* intégrée dans *Visual Studio*. C'était donc pour moi une valeur sûre. Cet outil peut générer de la documentation pour **plusieurs langages de programmation** dont le C++, le langage dans lequel est écrite *SEL*.

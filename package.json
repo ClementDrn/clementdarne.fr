@@ -1,5 +1,17 @@
 {
   "dependencies": {
-    "bootstrap-icons": "^1.8.1"
-  }
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "postcss-easing-gradients": "^3.0.1",
+    "postcss-nesting": "^13.0.1"
+  },
+  "name": "clementdarne.fr",
+  "description": "Personal website",
+  "version": "2.0.0",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Clément Darne",
+  "license": "MIT"
 }
