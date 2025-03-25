@@ -130,3 +130,40 @@ document.addEventListener('DOMContentLoaded', function() {
     cards.forEach(card => observer.observe(card));
   }
 });
+
+// Adjust font size of h3 elements in cards to fit the content within the card
+document.addEventListener('DOMContentLoaded', function(){
+  document.querySelectorAll('.fallback-alt').forEach(fallback => {
+    adjustFontSize(fallback);
+  });
+});
+
+function adjustFontSize(text) {
+  // Minimum font size in px
+  const minFontSize = 12;
+  // Get the computed style initially
+  const computedStyle = window.getComputedStyle(text);
+  const maxFontSize = parseFloat(computedStyle.fontSize) || 20;
+
+  let low = minFontSize;
+  let high = maxFontSize;
+  let best = minFontSize;
+
+  while(low <= high) {
+    let mid = Math.floor((low + high) / 2);
+    text.style.fontSize = mid + 'px';
+
+    // Measure text width after forcing a reflow
+    let currentWidth = text.scrollWidth;
+    let containerWidth = text.offsetWidth;
+
+    if(currentWidth <= containerWidth) {
+      best = mid;
+      low = mid + 1;
+    } else {
+      high = mid - 1;
+    }
+  }
+
+  text.style.fontSize = best + 'px';
+}

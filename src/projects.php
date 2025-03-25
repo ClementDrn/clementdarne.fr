@@ -64,8 +64,10 @@ function displayProjects() {
     echo <<<HTML
       <div class='card'>
         $startATag
-        <!-- If no thumbnail, show card title instead -->
-        <img class='card-image' src='./assets/img/$thumbnail' height='500' width='500' alt='$name'/>
+        <!-- If thumbnail fails, show fallback alt text -->
+        <span class="fallback-alt">$name</span>
+        <img class='card-image' src='./assets/img/$thumbnail' height='500' width='500' alt='$name'
+            onerror="this.style.display='none'; this.previousElementSibling.style.display='block';" />
         <div class='overlay card-body'>
           <h3>$name</h3>
           <p class='card-text'>
