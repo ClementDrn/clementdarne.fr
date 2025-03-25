@@ -265,6 +265,9 @@ h3.nav-title {
       &:hover .overlay, &:active .overlay {
         opacity: 1;
       }
+      &.active .overlay {
+        opacity: 1;
+      }
       
       .card-body {
         padding: 1rem;

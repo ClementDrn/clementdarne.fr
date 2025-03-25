@@ -108,3 +108,25 @@ document.querySelectorAll('a').forEach(link => {
     }
   });
 });
+
+// Set project cards as active when in the middle of the screen
+document.addEventListener('DOMContentLoaded', function() {
+  // Only enable card activation effect on mobile (max-width 768px)
+  if (window.matchMedia('(max-width: 768px)').matches) {
+    const cards = document.querySelectorAll('.card');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.intersectionRatio >= 0.5) {
+          entry.target.classList.add('active');
+        } else {
+          entry.target.classList.remove('active');
+        }
+      });
+    }, {
+      threshold: [0.5],
+      rootMargin: "0px 0px -25% 0px"
+    });
+
+    cards.forEach(card => observer.observe(card));
+  }
+});
