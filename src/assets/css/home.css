@@ -125,7 +125,7 @@ h3.nav-title {
 #start-page {
   display: flex;
   min-height: 100vh;
-  padding: 0 20vw;
+  padding: 0 10vw;
 
   flex-direction: column;
   align-items: center;
@@ -135,28 +135,27 @@ h3.nav-title {
   
   /* Grading from bg2 to bg1 using postcss-easing-gradients */
   background: linear-gradient(#2b3339, ease-in-out, #1e2327);
-  
+
   .row {
     justify-content: center;
-
-    /* FIXME: Phone viewport: Image clips under header */
-    img {
-      box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
-      margin: 0 2rem 0 0;
-      border-radius: 15px;
-    }
+    gap: 2rem 2rem;
 
     #title {
       max-width: fit-content;
 
       h1 {
-        padding: 1rem 2rem 0 0;
+        padding-right: 1rem;
         font-size: 2.4rem;
         text-shadow: rgba(0, 0, 0, 0.4) 0 10px 60px;
       }
 
       strong {
         color: var(--theme-contrast);
+      }
+
+      .lead {
+        position: relative;
+        right: -1rem;
       }
     }
 
@@ -172,6 +171,34 @@ h3.nav-title {
       margin: 1rem 0;
     }
   }
+  img {
+    width: 300px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    margin: 0;
+    border-radius: 15px;
+  }
+
+  @media (max-width: 800px) {
+    img {
+      width: 275px;
+      height: auto;
+    }
+  }
+  @media (max-width: 600px) {
+    .row {
+      margin-top: 2rem;
+    }
+    img {
+      width: 250px;
+      height: auto;
+    }
+  }
+  @media (max-width: 400px) {
+    .row {
+      margin-top: 6rem;
+    }
+  }
 }
 
 
@@ -180,6 +207,7 @@ h3.nav-title {
  */
 
 #projects {
+  margin-top: 4rem;
 
   .cards {
     display: flex;
@@ -291,6 +319,7 @@ h3.nav-title {
   .timeline {
     position: relative;
     margin-top: 20px;
+    margin-left: .5rem;
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-start;
@@ -456,6 +485,21 @@ h3.nav-title {
       height: 30px;
       top: -30px
       /* Border is handled by PHP */
+    }
+    @media (max-width: 500px) {
+      .timeline-item {
+        height: 10rem;
+      }
+    }
+    @media (max-width: 450px) {
+      .timeline-item {
+        height: 11rem;
+      }
+    }
+    @media (max-width: 400px) {
+      .timeline-item {
+        height: 12rem;
+      }
     }
   }
 
