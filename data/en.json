@@ -1,0 +1,77 @@
+{
+  "sections": {
+    "home": {
+      "title": "Hi, I'm **Clément**",
+      "subtitle": "Computer Engineering Student",
+      "txt0": "I am one of the",
+      "txt1": "human beings populating this beautiful planet we call **Earth**. Currently passionate about my studies in **computer science**, I aspire to continue in **research**."
+    },
+    "projects": {
+      "title": "Projects"
+    },
+    "about": {
+      "title": "About me",
+      "easterEgg": "No! Don't press the red button!",
+      "shell": {
+        "labels": {
+          "user": "User:",
+          "age": "Age:",
+          "height": "Height:",
+          "diploma": "Diploma:",
+          "languages": "Languages:",
+          "hobbies": "Hobbies:",
+          "skills": "Skills:",
+          "objective": "Objective:",
+          "stats": "Stats:",
+          "force": "Strength:",
+          "constitution": "Constitution:",
+          "dexterity": "Dexterity:",
+          "intelligence": "Intelligence:",
+          "wisdom": "Wisdom:",
+          "charisma": "Charisma:",
+          "title": "Title:"
+        },
+        "user": "Clément DARNE",
+        "height": "1.86 m",
+        "diploma": "DUT Computer Science",
+        "languages": "French, English, Japanese",
+        "hobbies": "Computing, Photography, Music, Video Games",
+        "skills": "Hardware, AI, Embedded Systems, Software",
+        "objective": "Become a computer science researcher",
+        "stats": {
+          "force": 9,
+          "constitution": 16,
+          "dexterity": 13,
+          "intelligence": 27,
+          "wisdom": 25,
+          "charisma": 14
+        },
+        "title": "Master of Debugging [INT+5, CHA-5]"
+      }
+    },
+    "contact": {
+      "title": "Contact"
+    }
+  },
+  "licenses": {
+    "icons": {
+      "intro": "Colored icons created by",
+      "author": "Freepik - Flaticon"
+    },
+    "cc": {
+      "introl": "This website is made available under the terms of the",
+      "license": "Creative Commons Attribution 4.0 International License"
+    }
+  },
+  "today": "today",
+  "population": "8 billion",
+  "age": {
+    "years": "years",
+    "months": "months",
+    "month": "month",
+    "days": "days",
+    "day": "day",
+    "and": "and"
+  },
+  "language": "Language"
+}

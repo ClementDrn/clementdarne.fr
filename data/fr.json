@@ -1,0 +1,77 @@
+{
+  "sections": {
+    "home": {
+      "title": "Salut, moi c'est **Clément**",
+      "subtitle": "Étudiant ingénieur en informatique",
+      "txt0": "Je fais partie des",
+      "txt1": "êtres humains qui peuplent cette belle planète qu'est la **Terre**. Actuellement passionné par mes études d'**informatique**, j'aspire à continuer en **recherche**."
+    },
+    "projects": {
+      "title": "Projets"
+    },
+    "about": {
+      "title": "À propos de moi",
+      "easterEgg": "Stop ! N'appuie pas sur le bouton rouge !",
+      "shell": {
+        "labels": {
+          "user": "Utilisateur:",
+          "age": "Âge:",
+          "height": "Taille:",
+          "diploma": "Diplôme:",
+          "languages": "Langues:",
+          "hobbies": "Loisirs:",
+          "skills": "Compétences:",
+          "objective": "Objectif:",
+          "stats": "Stats:",
+          "force": "Force:",
+          "constitution": "Constitution:",
+          "dexterity": "Dextérité:",
+          "intelligence": "Intelligence:",
+          "wisdom": "Sagesse:",
+          "charisma": "Charisme:",
+          "title": "Titre:"
+        },
+        "user": "Clément DARNE",
+        "height": "1.86 m",
+        "diploma": "DUT Informatique",
+        "languages": "Français, Anglais, Japonais",
+        "hobbies": "Informatique, Photographie, Musique, Jeux vidéo",
+        "skills": "Hardware, IA, Systèmes embarqués, Logiciel",
+        "objective": "Devenir chercheur en informatique",
+        "stats": {
+          "force": 9,
+          "constitution": 16,
+          "dexterity": 13,
+          "intelligence": 27,
+          "wisdom": 25,
+          "charisma": 14
+        },
+        "title": "Maître du débogage [INT+5, CHA-5]"
+      }
+    },
+    "contact": {
+      "title": "Contact"
+    }
+  },
+  "licenses": {
+    "icons": {
+      "intro": "Icônes colorées créées par",
+      "author": "Freepik - Flaticon"
+    },
+    "cc": {
+      "introl": "Ce site web est mis à disposition selon les termes de la",
+      "license": "Licence Creative Commons Attribution 4.0 International"
+    }
+  },
+  "today": "aujourd'hui",
+  "population": "8 milliards",
+  "age": {
+    "years": "ans",
+    "months": "mois",
+    "month": "mois",
+    "days": "jours",
+    "day": "jour",
+    "and": "et"
+  },
+  "language": "Langue"
+}

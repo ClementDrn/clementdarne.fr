@@ -2,8 +2,7 @@
 
 require_once __DIR__.'/../vendor/autoload.php';
 
-
-function displayProjects() {
+function displayProjects($lang = "fr") {
   // Load projects from JSON file
   $jsonFile = __DIR__ . '/../data/projects.json';
   if (!file_exists($jsonFile)) {
@@ -12,8 +11,19 @@ function displayProjects() {
 
   $jsonData = file_get_contents($jsonFile);
   $projects = json_decode($jsonData, true);
-
   if (!is_array($projects)) {
+    die('Invalid JSON format.');
+  }
+  
+  // Load general language data
+  $langFile = __DIR__ . '/../data/' . $lang . '.json'; 
+  if (!file_exists($langFile)) {
+    die('Language file not found.');
+  }
+
+  // Load js object
+  $langData = json_decode(file_get_contents($langFile), true);
+  if (!is_array($langData)) {
     die('Invalid JSON format.');
   }
 
@@ -34,8 +44,8 @@ function displayProjects() {
       continue;
     }
     
-    // Get important properties
-    $name = $project['title'] ?? '';
+    // Get important properties using the language parameter
+    $name = isset($project['title'][$lang]) ? $project['title'][$lang] : '';
     if ($name === '') {
       continue;
     }
@@ -43,15 +53,15 @@ function displayProjects() {
     // Other properties
     $link      = $project['link'] ?? '';
     $thumbnail = $project['thumbnail'] ?? '';
-    $description = isset($project['summary']) && $project['summary'] !== null
-                     ? Parsedown::instance()->line($project['summary'])
+    $description = (isset($project['summary'][$lang]) && $project['summary'][$lang] !== null)
+                     ? Parsedown::instance()->line($project['summary'][$lang])
                      : '';
     $date = $project['start_year'] != null
             ? $project['start_year'] . (
               $project['start_year'] == $project['end_year']
               ? ''
               : ' - ' . (
-                ($project['end_year'] != null) ? $project['end_year'] : "today"
+                ($project['end_year'] != null) ? $project['end_year'] : $langData["today"]
               )
             )
             : '';
@@ -72,7 +82,7 @@ function displayProjects() {
         $startATag
         <!-- If thumbnail fails, show fallback alt text -->
         <span class="fallback-alt hidden">$name</span>
-        <img class='card-image' src='./assets/img/$thumbnail' height='500' width='500' alt='$name'
+        <img class='card-image' src='/assets/img/$thumbnail' height='500' width='500' alt='$name'
             onerror="this.style.display='none'; this.previousElementSibling.style.display='block';" />
         <div class='overlay card-body'>
           <h3>$name</h3>

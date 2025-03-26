@@ -1,162 +1,264 @@
 [
   {
     "type": "misc",
-    "title": "Zone de départ : France",
+    "title": {
+      "fr": "Zone de départ : France",
+      "en": "Starting Zone: France"
+    },
     "date": "2002",
-    "description": "Né à Lyon, en France : Résistance froid +5, Résistance chaleur -5",
+    "description": {
+      "fr": "Né à Lyon, en France : Résistance froid +5, Résistance chaleur -5",
+      "en": "Born in Lyon, France: +5 cold resistance, -5 heat resistance"
+    },
     "rootColor": "#3C7C44",
     "color": "#3C7C44",
-    "icon": "assets/img/freepik/made-in-france.png"
+    "icon": "/assets/img/freepik/made-in-france.png"
   },
   {
     "type": "school",
-    "title": "Tutoriel : École primaire",
+    "title": {
+      "fr": "Tutoriel : École primaire",
+      "en": "Tutorial: Primary School"
+    },
     "date": "2004",
-    "description": "Conditions de succès : survivre",
+    "description": {
+      "fr": "Conditions de succès : survivre",
+      "en": "Success criteria: survive"
+    },
     "rootColor": "#3C7C44",
     "color": "#458e68",
-    "icon": "assets/img/freepik/school-bag.png",
+    "icon": "/assets/img/freepik/school-bag.png",
     "children": [
       {
         "type": "misc",
-        "title": "Déplacement vers la Martinique",
+        "title": {
+          "fr": "Déplacement vers la Martinique",
+          "en": "Move to Martinique"
+        },
         "date": "2005",
-        "description": "Compétence acquise : Voyageur Niv.1, Constitution -5 (chaleur)",
+        "description": {
+          "fr": "Compétence acquise : Voyageur Niv.1, Constitution -5 (chaleur)",
+          "en": "Gained skill: Traveler Lv.1, -5 Constitution (heat)"
+        },
         "rootColor": "#458e68",
         "color": "#4C9E8F",
-        "icon": "assets/img/freepik/island.png",
+        "icon": "/assets/img/freepik/island.png",
         "children": [
           {
             "type": "misc",
-            "title": "Premier livre lu",
+            "title": {
+              "fr": "Premier livre lu",
+              "en": "First Book Read"
+            },
             "date": "2008",
-            "description": "Compétence acquise : Lecture Niv.1, Intelligence +3",
+            "description": {
+              "fr": "Compétence acquise : Lecture Niv.1, Intelligence +3",
+              "en": "Gained skill: Reading Lv.1, +3 Intelligence"
+            },
             "rootColor": "#4C9E8F",
             "color": "#4C9E8F",
-            "icon": "assets/img/freepik/read.png"
+            "icon": "/assets/img/freepik/read.png"
           },
           {
             "type": "misc",
-            "title": "Premier concert",
+            "title": {
+              "fr": "Premier concert",
+              "en": "First Concert"
+            },
             "date": "2009",
-            "description": "Cassage d'oreilles : Dextérité +2, Constitution: +3, Charisme -5",
+            "description": {
+              "fr": "Cassage d'oreilles : Dextérité +2, Constitution +3, Charisme -5",
+              "en": "Ear splitting: +2 Dexterity, +3 Constitution, -5 Charisma"
+            },
             "rootColor": "#4C9E8F",
             "color": "#4C9E8F",
-            "icon": "assets/img/freepik/violin.png"
+            "icon": "/assets/img/freepik/violin.png"
           }
         ]
       },
       {
         "type": "misc",
-        "title": "Retour en France",
+        "title": {
+          "fr": "Retour en France",
+          "en": "Return to France"
+        },
         "date": "2011",
-        "description": "Compétence acquise : Adaptation Niv.1, Constitution +5 (froid)",
+        "description": {
+          "fr": "Compétence acquise : Adaptation Niv.1, Constitution +5 (froid)",
+          "en": "Gained skill: Adaptation Lv.1, +5 Constitution (cold)"
+        },
         "rootColor": "#458e68",
         "color": "#4C9E8F",
-        "icon": "assets/img/freepik/airplane.png"
+        "icon": "/assets/img/freepik/airplane.png"
       }
     ]
   },
   {
     "type": "school",
-    "title": "Fin du tutoriel : École primaire",
+    "title": {
+      "fr": "Fin du tutoriel : École primaire",
+      "en": "End of Tutorial: Primary School"
+    },
     "date": "2013",
-    "description": "Compétence acquise : Étudiant Niv.1, Intelligence +5",
+    "description": {
+      "fr": "Compétence acquise : Étudiant Niv.1, Intelligence +5",
+      "en": "Gained skill: Student Lv.1, +5 Intelligence"
+    },
     "rootColor": "#3C7C44",
     "color": "#458e68",
-    "icon": "assets/img/freepik/grade.png"
+    "icon": "/assets/img/freepik/grade.png"
   },
   {
     "type": "school",
-    "title": "1re quête : Enseignement secondaire",
+    "title": {
+      "fr": "1re quête : Enseignement secondaire",
+      "en": "First Quest: Secondary School"
+    },
     "date": "2013",
-    "description": "Conditions de succès : Vaincre l'épreuve du bac",
+    "description": {
+      "fr": "Conditions de succès : Vaincre l'épreuve du bac",
+      "en": "Success criteria: Pass the Secondary School final exam"
+    },
     "rootColor": "#3C7C44",
     "color": "#458e68",
-    "icon": "assets/img/freepik/books.png",
+    "icon": "/assets/img/freepik/books.png",
     "children": [
       {
         "type": "misc",
-        "title": "Premier ordinateur",
+        "title": {
+          "fr": "Premier ordinateur",
+          "en": "First Computer"
+        },
         "date": "2014",
-        "description": "Compétence acquise : Geek Niv.1, Intelligence +3, Force -5",
+        "description": {
+          "fr": "Compétence acquise : Geek Niv.1, Intelligence +3, Force -5",
+          "en": "Gained skill: Geek Lv.1, +3 Intelligence, -5 Strength"
+        },
         "rootColor": "#458e68",
         "color": "#458e68",
-        "icon": "assets/img/freepik/laptop.png"
+        "icon": "/assets/img/freepik/laptop.png"
       },
       {
         "type": "misc",
-        "title": "Compétitions de basket",
+        "title": {
+          "fr": "Compétitions de basket",
+          "en": "Basketball Competitions"
+        },
         "date": "2015",
-        "description": "Entrainement mortel : Force +2, Sagesse +5",
+        "description": {
+          "fr": "Entraînement mortel : Force +2, Sagesse +5",
+          "en": "Intense training: +2 Strength, +5 Wisdom"
+        },
         "rootColor": "#458e68",
         "color": "#458e68",
-        "icon": "assets/img/freepik/basketball.png"
+        "icon": "/assets/img/freepik/basketball.png"
       },
       {
         "type": "misc",
-        "title": "Premier code informatique",
+        "title": {
+          "fr": "Premier code informatique",
+          "en": "First Computer Code"
+        },
         "date": "2017",
-        "description": "Compétence acquise : Développeur Niv.1, Charisme -3",
+        "description": {
+          "fr": "Compétence acquise : Développeur Niv.1, Charisme -3",
+          "en": "Gained skill: Developer Lv.1, -3 Charisma"
+        },
         "rootColor": "#458e68",
         "color": "#458e68",
-        "icon": "assets/img/freepik/code.png"
+        "icon": "/assets/img/freepik/code.png"
       },
       {
         "type": "misc",
-        "title": "1 an en Irlande",
+        "title": {
+          "fr": "1 an en Irlande",
+          "en": "One Year in Ireland"
+        },
         "date": "2018",
-        "description": "Compétences acquises : Voyageur Niv.2, Anglais Niv.2",
+        "description": {
+          "fr": "Compétences acquises : Voyageur Niv.2, Anglais Niv.2",
+          "en": "Gained skills: Traveler Lv.2, English Lv.2"
+        },
         "rootColor": "#458e68",
         "color": "#458e68",
-        "icon": "assets/img/freepik/ireland.png"
+        "icon": "/assets/img/freepik/ireland.png"
       }
     ]
   },
   {
     "type": "school",
-    "title": "Baccalauréat vaincu",
+    "title": {
+      "fr": "Baccalauréat vaincu",
+      "en": "Secondary School final exam vanquished"
+    },
     "date": "2020",
-    "description": "Compétence acquise : Étudiant Niv.2, Intelligence +5",
+    "description": {
+      "fr": "Compétence acquise : Étudiant Niv.2, Intelligence +5",
+      "en": "Gained skill: Student Lv.2, +5 Intelligence"
+    },
     "rootColor": "#3C7C44",
     "color": "#458e68",
-    "icon": "assets/img/freepik/certificate.png"
+    "icon": "/assets/img/freepik/certificate.png"
   },
   {
     "type": "school",
-    "title": "2e quête : [IUT Lyon 1](https://iut.univ-lyon1.fr/)",
+    "title": {
+      "fr": "2e quête : [IUT Lyon 1](https://iut.univ-lyon1.fr/)",
+      "en": "Second Quest: IUT Lyon 1"
+    },
     "date": "2020",
-    "description": "Conditions de succès : Obtenir le DUT Informatique",
+    "description": {
+      "fr": "Conditions de succès : Obtenir le DUT d'Informatique",
+      "en": "Success criteria: Obtain the DUT of Computer Science"
+    },
     "rootColor": "#3C7C44",
     "color": "#458e68",
-    "icon": "assets/img/freepik/school0.png",
+    "icon": "/assets/img/freepik/school0.png",
     "children": [
       {
         "type": "job",
-        "title": "Travail : Étudiant tuteur",
+        "title": {
+          "fr": "Travail : Étudiant tuteur",
+          "en": "Job: Student Tutor"
+        },
         "date": "2021",
-        "description": "Aide des étudiants en 1re année : Intelligence +3, Charisme +5",
+        "description": {
+          "fr": "Aide des étudiants en 1re année : Intelligence +3, Charisme +5",
+          "en": "Helped first-year students: +3 Intelligence, +5 Charisma"
+        },
         "rootColor": "#458e68",
         "color": "#458e68",
-        "icon": "assets/img/freepik/tutoring.png"
+        "icon": "/assets/img/freepik/tutoring.png"
       },
       {
         "type": "exchange",
-        "title": "Quête secondaire : Échange au [Cégep de Matane](https://www.cegep-matane.qc.ca/)",
+        "title": {
+          "fr": "Quête secondaire : Échange au [Cégep de Matane](https://www.cegep-matane.qc.ca/)",
+          "en": "Side Quest: Exchange at Matane [CEGEP](https://www.cegep-matane.qc.ca/)"
+        },
         "date": "2022",
-        "description": "Conditions de succès : Survivre à l'hiver canadien",
+        "description": {
+          "fr": "Conditions de succès : Survivre à l'hiver canadien",
+          "en": "Success criteria: Survive the Canadian winter"
+        },
         "rootColor": "#458e68",
         "color": "#4C9E8F",
-        "icon": "assets/img/freepik/canada.png",
+        "icon": "/assets/img/freepik/canada.png",
         "children": [
           {
             "type": "internship",
-            "title": "Stage informatique au [CDRIN](https://www.cdrin.com/)",
+            "title": {
+              "fr": "Stage informatique au [CDRIN](https://www.cdrin.com/)",
+              "en": "Internship in IT at [CDRIN](https://www.cdrin.com/)"
+            },
             "date": "2022",
-            "description": "Compétence acquise : Développeur Niv.2, Intelligence +3",
+            "description": {
+              "fr": "Compétence acquise : Développeur Niv.2, Intelligence +3",
+              "en": "Gained skill: Developer Lv.2, +3 Intelligence"
+            },
             "rootColor": "#4C9E8F",
             "color": "#4C9E8F",
-            "icon": "assets/img/freepik/game-dev.png"
+            "icon": "/assets/img/freepik/game-dev.png"
           }
         ]
       }
@@ -164,75 +266,123 @@
   },
   {
     "type": "school",
-    "title": "2e quête accomplie : DUT Informatique",
+    "title": {
+      "fr": "2e quête accomplie : DUT d'Informatique",
+      "en": "Second Quest Completed: DUT of Computer Science"
+    },
     "date": "2022",
-    "description": "Développeur Niv.3, Intelligence +5",
+    "description": {
+      "fr": "Développeur Niv.3, Intelligence +5",
+      "en": "Developer Lv.3, +5 Intelligence"
+    },
     "rootColor": "#3C7C44",
     "color": "#458e68",
-    "icon": "assets/img/freepik/graduation.png"
+    "icon": "/assets/img/freepik/graduation.png"
   },
   {
     "type": "school",
-    "title": "3e quête : [Grenoble INP - Ensimag](https://ensimag.grenoble-inp.fr/)",
+    "title": {
+      "fr": "3e quête : [Grenoble INP - Ensimag](https://ensimag.grenoble-inp.fr/)",
+      "en": "Third Quest: [Grenoble INP - Ensimag](https://ensimag.grenoble-inp.fr/en)"
+    },
     "date": "2022 - 2025",
-    "description": "Conditions de succès : Obtenir le diplôme d'ingénieur",
+    "description": {
+      "fr": "Conditions de succès : Obtenir le diplôme d'ingénieur",
+      "en": "Success criteria: Earn an engineering degree"
+    },
     "rootColor": "#3C7C44",
     "color": "#458e68",
-    "icon": "assets/img/freepik/school1.png",
+    "icon": "/assets/img/freepik/school1.png",
     "children": [
       {
         "type": "misc",
-        "title": "Ski à Grenoble",
+        "title": {
+          "fr": "Ski à Grenoble",
+          "en": "Skiing in Grenoble"
+        },
         "date": "2023",
-        "description": "Nombreuses chutes : Ski Niv.1-2-3, Constitution +10",
+        "description": {
+          "fr": "Nombreuses chutes : Ski Niv.1-2-3, Constitution +10",
+          "en": "Many falls: Skiing levels 1-2-3, +10 Constitution"
+        },
         "rootColor": "#458e68",
         "color": "#458e68",
-        "icon": "assets/img/freepik/ski-resort.png"
+        "icon": "/assets/img/freepik/ski-resort.png"
       },
       {
         "type": "internship",
-        "title": "Stage en IA & hardware à [TIMA](https://tima.univ-grenoble-alpes.fr/)",
+        "title": {
+          "fr": "Stage en IA & hardware à [TIMA](https://tima.univ-grenoble-alpes.fr/)",
+          "en": "Internship in AI & Hardware at [TIMA](https://tima.univ-grenoble-alpes.fr/)"
+        },
         "date": "2023",
-        "description": "Développeur Niv.3 évolue en Ingénieur Niv.1",
+        "description": {
+          "fr": "Développeur Niv.3 évolue en Ingénieur Niv.1",
+          "en": "Developer Lv.3 evolves to Engineer Lv.1"
+        },
         "rootColor": "#458e68",
         "color": "#458e68",
-        "icon": "assets/img/freepik/chip.png"
+        "icon": "/assets/img/freepik/chip.png"
       },
       {
         "type": "internship",
-        "title": "Stage en systèmes embarqués chez [DIAMSENS](https://www.diamsens.com/)",
+        "title": {
+          "fr": "Stage en systèmes embarqués chez [DIAMSENS](https://www.diamsens.com/)",
+          "en": "Internship in Embedded Systems at [DIAMSENS](https://www.diamsens.com/)"
+        },
         "date": "2024",
-        "description": "Compétence acquise : Ingénieur Niv.2, Intelligence +3, Sagesse +2",
+        "description": {
+          "fr": "Compétence acquise : Ingénieur Niv.2, Intelligence +3, Sagesse +2",
+          "en": "Gained skill: Engineer Lv.2, +3 Intelligence, +2 Wisdom"
+        },
         "rootColor": "#458e68",
         "color": "#458e68",
-        "icon": "assets/img/freepik/motherboard.png"
+        "icon": "/assets/img/freepik/motherboard.png"
       },
       {
         "type": "exchange",
-        "title": "Quête secondaire : Échange à [Kobe University](https://www.kobe-u.ac.jp/en/)",
+        "title": {
+          "fr": "Quête secondaire : Échange à [Kobe University](https://www.kobe-u.ac.jp/en/)",
+          "en": "Side Quest: Exchange at [Kobe University](https://www.kobe-u.ac.jp/en/)"
+        },
         "date": "2024",
-        "description": "Conditions de succès : Parler japonais",
+        "description": {
+          "fr": "Conditions de succès : Parler japonais",
+          "en": "Success criteria: Speak Japanese"
+        },
         "rootColor": "#458e68",
         "color": "#4C9E8F",
-        "icon": "assets/img/freepik/japan.png",
+        "icon": "/assets/img/freepik/japan.png",
         "children": [
           {
             "type": "misc",
-            "title": "Marathon de Kobe",
+            "title": {
+              "fr": "Marathon de Kobe",
+              "en": "Kobe Marathon"
+            },
             "date": "2024",
-            "description": "Épreuve mentale : Sagesse +15, Consitution +5",
+            "description": {
+              "fr": "Épreuve mentale : Sagesse +15, Constitution +5",
+              "en": "Mental challenge: +15 Wisdom, +5 Constitution"
+            },
             "rootColor": "#4C9E8F",
             "color": "#4C9E8F",
-            "icon": "assets/img/freepik/marathon.png"
+            "icon": "/assets/img/freepik/marathon.png"
           },
           {
             "type": "research",
-            "title": "Recherche en IA",
+            "title": {
+              "fr": "Recherche en IA",
+              "en": "Research in AI"
+            },
             "date": "2025",
-            "description": "Compétence acquise : Chercheur Niv.1, Intelligence +5",
+            "description": {
+              "fr": "Compétence acquise : Chercheur Niv.1, Intelligence +5",
+              "en": "Gained skill: Researcher Lv.1, +5 Intelligence"
+            },
             "rootColor": "#4C9E8F",
             "color": "#4C9E8F",
-            "icon": "assets/img/freepik/research.png"
+            "icon": "/assets/img/freepik/research.png"
           }
         ]
       }
