@@ -47,7 +47,13 @@ function displayProjects() {
                      ? Parsedown::instance()->line($project['summary'])
                      : '';
     $date = $project['start_year'] != null
-            ? ($project['start_year'] . ' - ' . (($project['end_year'] != null) ? $project['end_year'] : "today"))
+            ? $project['start_year'] . (
+              $project['start_year'] == $project['end_year']
+              ? ''
+              : ' - ' . (
+                ($project['end_year'] != null) ? $project['end_year'] : "today"
+              )
+            )
             : '';
             
     // If an external link is provided, add it to HTML page
@@ -65,7 +71,7 @@ function displayProjects() {
       <div class='card'>
         $startATag
         <!-- If thumbnail fails, show fallback alt text -->
-        <span class="fallback-alt">$name</span>
+        <span class="fallback-alt hidden">$name</span>
         <img class='card-image' src='./assets/img/$thumbnail' height='500' width='500' alt='$name'
             onerror="this.style.display='none'; this.previousElementSibling.style.display='block';" />
         <div class='overlay card-body'>

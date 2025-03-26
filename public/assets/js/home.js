@@ -139,6 +139,9 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 function adjustFontSize(text) {
+  // Unhide the text to measure the width
+  text.classList.remove('hidden');
+
   // Minimum font size in px
   const minFontSize = 12;
   // Get the computed style initially
@@ -165,5 +168,8 @@ function adjustFontSize(text) {
     }
   }
 
+  // Final font size
   text.style.fontSize = best + 'px';
+  // Hide the text again
+  text.classList.add('hidden');
 }
