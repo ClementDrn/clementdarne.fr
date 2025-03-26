@@ -1,7 +1,7 @@
 <?php
 
 function getWorldPopulationString(): string {
-  require_once __DIR__.'/../src/base.php';
+  require_once __DIR__.'/base.php';
   loadEnv();
 
   $curl = curl_init();
