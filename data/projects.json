@@ -1,102 +1,122 @@
 [
   {
     "visible": true,
-    "title": "Project1",
+    "title": "clementdarne.dev",
     "released": true,
-    "link": "#",
+    "link": "https://github.com/ClementDrn/clementdarne.fr",
     "thumbnail": "",
-    "summary": "Lorem ipsum **dolor sit** amet _consectur_",
-    "start_year": 2021,
-    "end_year": 2022
+    "summary": "Mon **site web personnel** que vous visitez actuellement. C'est le successeur du site clementdarne.fr.",
+    "start_year": 2025,
+    "end_year": 2025
   },
   {
     "visible": true,
-    "title": "Project2",
+    "title": "clementdarne.fr",
     "released": true,
-    "link": "#",
-    "thumbnail": "dummy-4x3.png",
-    "summary": "Dolor sit",
+    "link": "https://github.com/ClementDrn/clementdarne.fr/tree/v1.x",
+    "thumbnail": "",
+    "summary": "Version antérieure de ce **site web**.",
     "start_year": 2022,
     "end_year": 2023
   },
   {
     "visible": true,
-    "title": "Project3",
-    "released": false,
-    "link": "",
-    "thumbnail": "dummy-4x3.png",
-    "summary": "Amet consectetur",
-    "start_year": 2023,
-    "end_year": null
+    "title": "Simple but Essential Library (SEL)",
+    "released": true,
+    "link": "https://github.com/ClementDrn/SEL",
+    "thumbnail": "projects/sel.jpg",
+    "summary": "**Bibliothèque C++** propsant des fonctionnalités **simples** mais **essentielles** pour de nombreux projets.",
+    "start_year": 2022,
+    "end_year": 2024
   },
   {
     "visible": false,
-    "title": "Project4",
+    "title": "Totally Accurate Physics Engine (TAPE)",
     "released": false,
-    "link": "#",
-    "thumbnail": "dummy-4x3.png",
-    "summary": "Adipiscing elit",
+    "link": "https://github.com/ClementDrn/TAPE",
+    "thumbnail": "",
+    "summary": "**Moteur de physiques 2D** en cours de développement.",
     "start_year": 2024,
-    "end_year": 2025
-  },
-  {
-    "visible": true,
-    "title": "Project5",
-    "released": true,
-    "link": "#",
-    "thumbnail": "",
-    "summary": "Sed do",
-    "start_year": 2025,
-    "end_year": 2026
-  },
-  {
-    "visible": true,
-    "title": "Project6",
-    "released": true,
-    "link": "#",
-    "thumbnail": "",
-    "summary": "Eiusmod tempor",
-    "start_year": 2026,
     "end_year": null
   },
   {
     "visible": true,
-    "title": "Project7",
-    "released": false,
-    "link": "#",
+    "title": "Fab Lab Air Quality Analysis",
+    "released": true,
+    "link": "https://github.com/ClementDrn/FLAQA",
     "thumbnail": "",
-    "summary": "Incididunt ut",
-    "start_year": 2027,
-    "end_year": null
+    "summary": "Travail d'**analyse des données** sur la **qualité de l'air** dans un fab lab. Ce projet a été réalisé dans le cadre d'un cours",
+    "start_year": 2024,
+    "end_year": 2024
   },
   {
     "visible": true,
-    "title": "Project8",
+    "title": "2D Platformer Game",
+    "released": true,
+    "link": "https://github.com/ClementDrn/ISN-Projet_Clement-Antoine",
+    "thumbnail": "projects/platformer-game.jpg",
+    "summary": "**Jeu de plateforme 2D** réalisé comme projet dans la spécialité ISN au lycée.",
+    "start_year": 2020,
+    "end_year": 2020
+  },
+  {
+    "visible": true,
+    "title": "Sudoku Solver",
     "released": false,
+    "link": "https://github.com/ClementDrn/Sudoku",
+    "thumbnail": "projects/sudoku.jpg",
+    "summary": "Application graphique qui peut **générer et résoudre** des **sudokus**.",
+    "start_year": 2022,
+    "end_year": 2022
+  },
+  {
+    "visible": true,
+    "title": "Success History",
+    "released": false,
+    "link": "https://github.com/ClementDrn/Success-History",
+    "thumbnail": "",
+    "summary": "**Application graphique cross-platform** permettant d'**enregistrer ses notes** par matière et de **calculer sa moyenne**.",
+    "start_year": 2022,
+    "end_year": 2022
+  },
+  {
+    "visible": true,
+    "title": "Pathfinding A*",
+    "released": true,
+    "link": "https://github.com/ClementDrn/Pathfinding",
+    "thumbnail": "projects/pathfinding.jpg",
+    "summary": "Implémentation de l'**algorithme A\\*** de recherche du plus court chemin avec **visualisation graphique**.",
+    "start_year": 2022,
+    "end_year": 2022
+  },
+  {
+    "visible": true,
+    "title": "Bacle Visists",
+    "released": true,
     "link": "",
-    "thumbnail": "dummy-4x3.png",
-    "summary": "Labore et",
-    "start_year": 2028,
-    "end_year": 2029
-  },
-  {
-    "visible": false,
-    "title": "Project9",
-    "released": true,
-    "link": "#",
     "thumbnail": "",
-    "summary": "Dolore magna",
-    "start_year": 2029,
-    "end_year": 2030
+    "summary": "**Application mobile cross-platform** pour planifier ses voyages touristiques. Elle a été réalisée dans le cadre d'un **projet tutoré** en cours.",
+    "start_year": 2022,
+    "end_year": 2022
   },
   {
-    "visible": false,
-    "title": "Project10",
+    "visible": true,
+    "title": "Crypter",
     "released": true,
-    "link": "#",
-    "thumbnail": "dummy-4x3.png",
-    "summary": "Aliqua ut",
-    "start_year": 2030,
-    "end_year": 2031
+    "link": "",
+    "thumbnail": "",
+    "summary": "Implémentation de l'algorithme de **chiffrement RSA**.",
+    "start_year": null,
+    "end_year": null
+  },
+  {
+    "visible": true,
+    "title": "Game of Life",
+    "released": true,
+    "link": "",
+    "thumbnail": "projects/game-of-life.jpg",
+    "summary": "Visualisation graphique du célèbre **Jeu de la vie** de John Conway.",
+    "start_year": 2022,
+    "end_year": 2022
   }
 ]
